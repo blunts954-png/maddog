@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Dog Tattoo | Downtown Bakersfield's Veteran Tattoo & Piercing Shop</title>
+    <meta name="description" content="Nearly 30 years in downtown Bakersfield. Specializing in Blackwork, Old School color, and solid cover-ups. Professional body piercing near 19th street. 4.6 Stars, 500+ reviews.">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- LocalBusiness + TattooParlor Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TattooParlor",
+      "name": "Mad Dog Tattoo",
+      "image": "maddog_tattoo_logo_1773729084697.png",
+      "@id": "https://maddogtattoobakersfield.com",
+      "url": "https://maddogtattoobakersfield.com",
+      "telephone": "(661) 322-8282",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1218 19th St",
+        "addressLocality": "Bakersfield",
+        "addressRegion": "CA",
+        "postalCode": "93301",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.3765,
+        "longitude": -119.0187
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:00",
+          "closes": "20:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.google.com/maps?cid=YOUR_CID",
+        "https://www.instagram.com/maddogtattoobakersfield"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "500"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tattoo and Piercing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Blackwork Tattooing",
+              "description": "Bold, high-contrast blackwork tattooing in downtown Bakersfield. Built to last."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Old School Tattoos",
+              "description": "Classic American Traditional tattooing with bold lines and solid color."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tattoo Cover-Ups",
+              "description": "Expert cover-up services for old, unwanted, or blown-out tattoos in Kern County."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Body Piercing",
+              "description": "Professional, sterile body piercing in a safe studio environment."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body class="dark-theme">
+    <div class="background-overlay" style="background-image: url('dark_textured_background_maddog_1773729064003.png');"></div>
+
+    <header class="parallax-section" id="hero">
+        <div class="frosted-glass hero-container">
+            <div class="hero-content">
+                <img src="maddog_tattoo_logo_1773729084697.png" alt="Mad Dog Tattoo Logo" class="main-logo">
+                <h1>MAD DOG TATTOO</h1>
+                <p class="tagline">Tattoo & Body Piercing - Downtown Bakersfield</p>
+                <div class="sub-line">
+                    Blackwork, Old School, and cover-ups in downtown Bakersfield, nearly 30 years on 19th Street.
+                </div>
+                <div class="credibility">
+                    <span class="stars">★★★★★</span> 4.6 on Google - 500+ reviews - 1218 19th St, Bakersfield, CA 93301
+                </div>
+                
+                <div class="cta-group">
+                    <a href="#booking" class="btn btn-primary ink-bleed">BOOK NOW</a>
+                    <button class="btn btn-secondary pulse-call" onclick="window.location.href='tel:6613228282'">CALL NOW TO BOOK</button>
+                    <button class="btn btn-tertiary quick-consult-trigger">QUICK CONSULT</button>
+                </div>
+                
+                <p class="scam-warning-micro">If it's not this address and this phone number, it's not Mad Dog Tattoo.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- WORK SECTION -->
+        <section id="work" class="parallax-section">
+            <div class="frosted-glass panel">
+                <h2>WORK THAT KEEPS BAKERSFIELD COMING BACK</h2>
+                <p class="intro">We’re a long-running Bakersfield shop, not a pop-up trend machine. The work that walks out of here is built to survive Central Valley heat, sun, and time—not just look cute in a filtered photo.</p>
+                
+                <nav class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="blackwork">Blackwork</button>
+                    <button class="filter-btn" data-filter="oldschool">Old School</button>
+                    <button class="filter-btn" data-filter="coverup">Cover-Ups</button>
+                    <button class="filter-btn" data-filter="piercing">Piercings</button>
+                </nav>
+
+                <div class="gallery-grid" id="portfolio-grid">
+                    <!-- Gallery Items will be populated here -->
+                </div>
+
+                <div class="gallery-footer-cta">
+                    <p>See something close to what you want? <button class="btn-text quick-consult-trigger">Hit 'Quick Consult' and drop a photo of your idea.</button></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="parallax-section">
+            <div class="frosted-glass panel">
+                <h2>ABOUT MAD DOG TATTOO</h2>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p>Mad Dog Tattoo has been burning ink into Bakersfield skin for nearly 30 years, holding down 19th Street before half the “tattoo influencers” you follow ever picked up a machine.</p>
+                        <p>We specialize in <strong>Blackwork</strong> and <strong>Old School</strong>—bold black, classic color, designs that still look like tattoos after years of Bakersfield summers.</p>
+                        
+                        <ul class="sharper-bullets">
+                            <li><strong>Downtown Authority:</strong> Long-standing tattoo and piercing studio in downtown Bakersfield, California—nearly three decades on the same street.</li>
+                            <li><strong>Built for Longevity:</strong> Focused on Blackwork, Old School color, and solid cover-ups instead of disposable trends.</li>
+                            <li><strong>Real Custom Work:</strong> Custom work built around your idea, your skin, and what will actually age well.</li>
+                        </ul>
+
+                        <div class="owner-line">
+                            Owner Marc DeLeon keeps the standard high: clean shop, honest feedback, and tattoos we’re still willing to stand next to years later.
+                        </div>
+                    </div>
+                    <div class="attitude-callout">
+                        <p>If you want whatever’s viral this week, there are other shops. If you want something that still looks like a tattoo after ten Bakersfield summers, you’re in the right place.</p>
+                        <p class="service-area-label">Serving downtown Bakersfield, East Bakersfield, Oildale, and Kern County walk-ins.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="parallax-section">
+            <div class="frosted-glass panel">
+                <h2>WHAT WE ACTUALLY DO HERE</h2>
+                <p class="intro">No gimmicks, no “maybe someday” services. This is the core menu we work with every day.</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Custom Tattoos</h3>
+                        <p>One-off pieces built around your idea, placement, and style. We walk you through size, detail, and how it’ll heal on your skin.</p>
+                        <ul class="service-bullets">
+                            <li><strong>For:</strong> People wanting unique, specialized art.</li>
+                            <li><strong>Sessions:</strong> 1 to multi-session depending on size.</li>
+                            <li><strong>Price:</strong> Artist quote after consult.</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Flash Tattoos</h3>
+                        <p>Classic designs ready to go when you want real tattoo history on you, not clip-art. Flash is fast, but we still do it right.</p>
+                        <ul class="service-bullets">
+                            <li><strong>For:</strong> Spontaneous collectors of tattoo history.</li>
+                            <li><strong>Sessions:</strong> Usually 1 quick session.</li>
+                            <li><strong>Price:</strong> Pre-priced based on design.</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Cover-Up Tattoos</h3>
+                        <p>Old, blown-out, or straight-up regrettable ink. We design over it with bold Blackwork or Old School pieces that actually bury what's underneath.</p>
+                        <ul class="service-bullets">
+                            <li><strong>For:</strong> Bad decisions or old ink needing a reset.</li>
+                            <li><strong>Process:</strong> 1-3 sessions typically.</li>
+                            <li><strong>Link:</strong> <a href="tattoos/cover-ups-bakersfield.html">Learn how cover-ups work in Kern County</a></li>
+                        </ul>
+                    </div>
+                    <!-- More cards... -->
+                    <div class="service-card">
+                        <h3>Body Piercing</h3>
+                        <p>Professional piercing in a studio environment with proper tools, sterilization, and jewelry—not whatever someone found online and guessed with.</p>
+                        <ul class="service-bullets">
+                            <li><strong>Focus:</strong> Safe, clean, and professional.</li>
+                            <li><strong>Status:</strong> Walk-ins usually welcome.</li>
+                            <li><strong>Price:</strong> Starts at jewelry + piercing fee.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KNOWLEDGE HUB PREVIEW -->
+        <section id="knowledge" class="parallax-section">
+            <div class="frosted-glass panel">
+                <h2>KNOWLEDGE HUB: BAKERSFIELD INK</h2>
+                <div class="posts-grid">
+                    <a href="aftercare-bakersfield-heat.html" class="post-card">
+                        <h3>Tattoo Aftercare in Bakersfield Heat</h3>
+                        <p>What changes when it's 105° out? Don't let the heat wreck your new lines.</p>
+                    </a>
+                    <a href="tattoos/blackwork-vs-oldschool.html" class="post-card">
+                        <h3>Blackwork vs. Old School</h3>
+                        <p>Which style holds up better in the California sun?</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING & BOOKING -->
+        <section id="booking" class="parallax-section">
+            <div class="frosted-glass panel">
+                <div class="booking-grid">
+                    <div class="pricing-info">
+                        <h2>PRICING (STRAIGHT UP)</h2>
+                        <p>Final prices come from the artist after hearing your idea. These ranges keep it honest.</p>
+                        <div class="price-bands">
+                            <div class="band">
+                                <strong>Small Tattoos:</strong> Starting at shop minimum.
+                            </div>
+                            <div class="band">
+                                <strong>Piercings:</strong> $40 - $120+ depending on jewelry.
+                            </div>
+                            <div class="band">
+                                <strong>Deposits:</strong> Required for larger work, non-refundable.
+                            </div>
+                        </div>
+                        <div class="faq-mini">
+                            <h3>What affects price?</h3>
+                            <p>Size, placement, detail, color, and session count. We don't rush, we do it right.</p>
+                        </div>
+                    </div>
+                    <div class="booking-options">
+                        <h2>BOOKING & SCAM WARNING</h2>
+                        <div class="scam-alert-box">
+                            <p><strong>ALERT:</strong> There are fake profiles pretending to be us. We do NOT book through random DMs or CashApps.</p>
+                            <p>If it's not 1218 19th St or (661) 322-8282, it's NOT Mad Dog Tattoo.</p>
+                        </div>
+                        <div class="contact-details">
+                            <p><strong>Phone:</strong> <a href="tel:6613228282">(661) 322-8282</a></p>
+                            <p><strong>Address:</strong> 1218 19th St, Bakersfield, CA 93301</p>
+                            <div class="cta-stack">
+                                <button class="btn btn-primary quick-consult-trigger">AI QUICK CONSULT</button>
+                                <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">OPEN IN MAPS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="frosted-glass">
+        <div class="footer-content">
+            <p>&copy; 2026 Mad Dog Tattoo | 1218 19th St, Bakersfield, CA 93301 | (661) 322-8282</p>
+            <p class="credits">Built by Chaotically Organized AI</p>
+        </div>
+    </footer>
+
+    <!-- QUICK CONSULT BOT UI -->
+    <div id="quick-consult-modal" class="modal">
+        <div class="modal-content frosted-glass">
+            <span class="close-modal">&times;</span>
+            <div id="bot-chat-container">
+                <div class="bot-header">
+                    <h3>Mad Dog Intake Bot</h3>
+                    <p>Tell us your idea in 1-2 minutes.</p>
+                </div>
+                <div id="bot-messages"></div>
+                <div id="bot-input-area">
+                    <!-- Dynamic buttons or text input -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
