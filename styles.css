@@ -89,6 +89,13 @@ body {
     min-height: 50vh;
 }
 
+/* MODERN GRID & RHYTHM */
+.frosted-glass, .nav-container, .footer-content {
+    max-width: 1280px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 .frosted-glass {
     background: var(--panel-bg);
     backdrop-filter: blur(var(--glass-blur));
@@ -620,8 +627,73 @@ h1 {
     padding: 16px;
 }
 
+/* AEO / FAQ STYLES */
+.aeo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.aeo-card {
+    background: rgba(20, 20, 20, 0.4);
+    border: 1px solid rgba(255, 77, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.aeo-card:hover {
+    border-color: var(--accent);
+    background: rgba(255, 77, 0, 0.05);
+    transform: translateY(-5px);
+}
+
+.aeo-card h3 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.aeo-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.neighborhoods {
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.map-embed {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid var(--panel-border);
+}
+
+/* FOOTER REFINEMENT */
+footer.frosted-glass {
+    max-width: 100%;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 100px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
 @media (max-width: 800px) {
-    .about-grid-new, .services-modern-grid, .team-modern-grid, .booking-modern-layout {
+    .about-grid-new, .services-modern-grid, .team-modern-grid, .booking-modern-layout, .hero-container {
         grid-template-columns: 1fr;
     }
 }
