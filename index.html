@@ -90,28 +90,66 @@
     </script>
 </head>
 <body class="dark-theme">
-    <div class="background-overlay" style="background-image: url('dark_textured_background_maddog_1773729064003.png');"></div>
+    <!-- SPLASH SCREEN -->
+    <div id="splash-screen">
+        <img src="maddoglogo.jpg" alt="Mad Dog Tattoo" class="splash-logo">
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <div class="logo-circle"></div>
+            <div class="brand-text">
+                <h2>MAD DOG TATTOO</h2>
+                <p>TATTOO & BODY PIERCING • BAKERSFIELD, CA</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#work">WORK</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#team">OUR TEAM</a>
+            <a href="#booking">PRICING</a>
+            <a href="#booking">BOOKING</a>
+            <a href="#booking" class="btn-book">BOOK NOW</a>
+        </div>
+    </nav>
+
+    <div class="background-overlay" style="background-image: url('maddoglogo.jpg');"></div>
 
     <header class="parallax-section" id="hero">
         <div class="frosted-glass hero-container">
-            <div class="hero-content">
-                <img src="maddog_tattoo_logo_1773729084697.png" alt="Mad Dog Tattoo Logo" class="main-logo">
-                <h1>MAD DOG TATTOO</h1>
-                <p class="tagline">Tattoo & Body Piercing - Downtown Bakersfield</p>
-                <div class="sub-line">
-                    Blackwork, Old School, and cover-ups in downtown Bakersfield, nearly 30 years on 19th Street.
-                </div>
-                <div class="credibility">
-                    <span class="stars">★★★★★</span> 4.6 on Google - 500+ reviews - 1218 19th St, Bakersfield, CA 93301
+            <div class="hero-main">
+                <div class="hero-badge">NEARLY 30 YEARS • DOWNTOWN BAKERSFIELD</div>
+                <h1>MAD DOG<br>TATTOO & BODY<br>PIERCING</h1>
+                <p class="sub-line">
+                    Mad Dog Tattoo is a long-standing tattoo and body piercing studio in Bakersfield, California, with nearly 30 years of experience. The shop specializes in <strong>Blackwork</strong> and <strong>Old School</strong> tattoos, known for bold black ink designs and classic American-style artwork with vibrant colors.
+                </p>
+                
+                <div class="hero-stats">
+                    <span class="stat-item"><span class="stars">★</span> 4.6 on Google - 500+ reviews</span>
+                    <span class="stat-item">1218 19th St, Bakersfield, CA 93301</span>
                 </div>
                 
-                <div class="cta-group">
-                    <a href="#booking" class="btn btn-primary ink-bleed">BOOK NOW</a>
-                    <button class="btn btn-secondary pulse-call" onclick="window.location.href='tel:6613228282'">CALL NOW TO BOOK</button>
-                    <button class="btn btn-tertiary quick-consult-trigger">QUICK CONSULT</button>
+                <div class="cta-row">
+                    <button class="btn btn-primary pulse-call" onclick="window.location.href='tel:6613228282'">CALL NOW TO BOOK</button>
+                    <a href="#work" class="btn btn-secondary">Scroll to work</a>
                 </div>
                 
-                <p class="scam-warning-micro">If it's not this address and this phone number, it's not Mad Dog Tattoo.</p>
+                <p class="scam-notice">The shop has faced issues with online scammers, so clients are encouraged to visit in person or call the studio directly—no random DMs, no fake profiles.</p>
+            </div>
+
+            <div class="hero-side-card">
+                <div class="style-card">
+                    <span class="card-label">TATTOO SHOP IN BAKERSFIELD</span>
+                    <h3>Blackwork • Old School • Cover-ups • Piercings</h3>
+                    <div class="tag-cloud">
+                        <span>CUSTOM DESIGNS</span>
+                        <span>BOLD BLACK INK</span>
+                        <span>CLASSIC COLOR</span>
+                        <span>BODY PIERCING</span>
+                    </div>
+                    <p class="card-footer"><strong>Owner: Marc DeLeon</strong> ensures quality work and customer satisfaction, making Mad Dog Tattoo a trusted name in the local tattoo community.</p>
+                </div>
             </div>
         </div>
     </header>
@@ -120,23 +158,13 @@
         <!-- WORK SECTION -->
         <section id="work" class="parallax-section">
             <div class="frosted-glass panel">
-                <h2>WORK THAT KEEPS BAKERSFIELD COMING BACK</h2>
-                <p class="intro">We’re a long-running Bakersfield shop, not a pop-up trend machine. The work that walks out of here is built to survive Central Valley heat, sun, and time—not just look cute in a filtered photo.</p>
-                
-                <nav class="gallery-filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="blackwork">Blackwork</button>
-                    <button class="filter-btn" data-filter="oldschool">Old School</button>
-                    <button class="filter-btn" data-filter="coverup">Cover-Ups</button>
-                    <button class="filter-btn" data-filter="piercing">Piercings</button>
-                </nav>
-
-                <div class="gallery-grid" id="portfolio-grid">
-                    <!-- Gallery Items will be populated here -->
+                <div class="panel-header">
+                    <h2>WORK</h2>
+                    <p>Blackwork, Old School, cover ups, and piercings that keep Bakersfield coming back.</p>
                 </div>
-
-                <div class="gallery-footer-cta">
-                    <p>See something close to what you want? <button class="btn-text quick-consult-trigger">Hit 'Quick Consult' and drop a photo of your idea.</button></p>
+                
+                <div class="gallery-grid" id="portfolio-grid">
+                    <!-- Cards will be populated here with new styling -->
                 </div>
             </div>
         </section>
@@ -144,25 +172,18 @@
         <!-- ABOUT SECTION -->
         <section id="about" class="parallax-section">
             <div class="frosted-glass panel">
-                <h2>ABOUT MAD DOG TATTOO</h2>
-                <div class="about-grid">
-                    <div class="about-content">
-                        <p>Mad Dog Tattoo has been burning ink into Bakersfield skin for nearly 30 years, holding down 19th Street before half the “tattoo influencers” you follow ever picked up a machine.</p>
-                        <p>We specialize in <strong>Blackwork</strong> and <strong>Old School</strong>—bold black, classic color, designs that still look like tattoos after years of Bakersfield summers.</p>
-                        
-                        <ul class="sharper-bullets">
-                            <li><strong>Downtown Authority:</strong> Long-standing tattoo and piercing studio in downtown Bakersfield, California—nearly three decades on the same street.</li>
-                            <li><strong>Built for Longevity:</strong> Focused on Blackwork, Old School color, and solid cover-ups instead of disposable trends.</li>
-                            <li><strong>Real Custom Work:</strong> Custom work built around your idea, your skin, and what will actually age well.</li>
-                        </ul>
-
-                        <div class="owner-line">
-                            Owner Marc DeLeon keeps the standard high: clean shop, honest feedback, and tattoos we’re still willing to stand next to years later.
-                        </div>
+                <div class="panel-header">
+                    <h2>ABOUT MAD DOG TATTOO</h2>
+                    <p>A long-running Bakersfield shop where art meets skin and the focus is real work, not trends.</p>
+                </div>
+                <div class="about-grid-new">
+                    <div class="about-text">
+                        <p>Mad Dog Tattoo is a long-standing tattoo and body piercing studio in Bakersfield, California, with nearly 30 years of experience.</p>
+                        <p>The shop specializes in <strong>Blackwork</strong> and <strong>Old School</strong> tattoos, known for bold black ink designs and classic American-style artwork with vibrant colors.</p>
+                        <p>Services include custom tattoo designs, professional tattooing, cover-ups, and piercings.</p>
                     </div>
-                    <div class="attitude-callout">
-                        <p>If you want whatever’s viral this week, there are other shops. If you want something that still looks like a tattoo after ten Bakersfield summers, you’re in the right place.</p>
-                        <p class="service-area-label">Serving downtown Bakersfield, East Bakersfield, Oildale, and Kern County walk-ins.</p>
+                    <div class="about-text-secondary">
+                        <p>The artists focus on creating unique tattoos that reflect each client's vision while staying rooted in designs that age well on real skin. Owner <strong>Marc DeLeon</strong> keeps the standards high.</p>
                     </div>
                 </div>
             </div>
@@ -171,105 +192,110 @@
         <!-- SERVICES SECTION -->
         <section id="services" class="parallax-section">
             <div class="frosted-glass panel">
-                <h2>WHAT WE ACTUALLY DO HERE</h2>
-                <p class="intro">No gimmicks, no “maybe someday” services. This is the core menu we work with every day.</p>
+                <div class="panel-header">
+                    <h2>SERVICES</h2>
+                    <p>The core menu Mad Dog offers—no fluff, just what they actually do every day.</p>
+                </div>
                 
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Custom Tattoos</h3>
-                        <p>One-off pieces built around your idea, placement, and style. We walk you through size, detail, and how it’ll heal on your skin.</p>
-                        <ul class="service-bullets">
-                            <li><strong>For:</strong> People wanting unique, specialized art.</li>
-                            <li><strong>Sessions:</strong> 1 to multi-session depending on size.</li>
-                            <li><strong>Price:</strong> Artist quote after consult.</li>
-                        </ul>
+                <div class="services-modern-grid">
+                    <div class="service-col">
+                        <div class="service-item">
+                            <h4>Custom Tattoos:</h4>
+                            <p>One-off pieces built around your idea, placement, and style.</p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Flash Tattoos:</h4>
+                            <p>Classic designs when you want something ready to go.</p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Cover-Up Tattoos:</h4>
+                            <p>Transforming old or unwanted tattoos into new work that fits your skin and story.</p>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <h3>Flash Tattoos</h3>
-                        <p>Classic designs ready to go when you want real tattoo history on you, not clip-art. Flash is fast, but we still do it right.</p>
-                        <ul class="service-bullets">
-                            <li><strong>For:</strong> Spontaneous collectors of tattoo history.</li>
-                            <li><strong>Sessions:</strong> Usually 1 quick session.</li>
-                            <li><strong>Price:</strong> Pre-priced based on design.</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h3>Cover-Up Tattoos</h3>
-                        <p>Old, blown-out, or straight-up regrettable ink. We design over it with bold Blackwork or Old School pieces that actually bury what's underneath.</p>
-                        <ul class="service-bullets">
-                            <li><strong>For:</strong> Bad decisions or old ink needing a reset.</li>
-                            <li><strong>Process:</strong> 1-3 sessions typically.</li>
-                            <li><strong>Link:</strong> <a href="tattoos/cover-ups-bakersfield.html">Learn how cover-ups work in Kern County</a></li>
-                        </ul>
-                    </div>
-                    <!-- More cards... -->
-                    <div class="service-card">
-                        <h3>Body Piercing</h3>
-                        <p>Professional piercing in a studio environment with proper tools, sterilization, and jewelry—not whatever someone found online and guessed with.</p>
-                        <ul class="service-bullets">
-                            <li><strong>Focus:</strong> Safe, clean, and professional.</li>
-                            <li><strong>Status:</strong> Walk-ins usually welcome.</li>
-                            <li><strong>Price:</strong> Starts at jewelry + piercing fee.</li>
-                        </ul>
+                    <div class="service-col">
+                        <div class="service-item">
+                            <h4>Tattoo Touch-Ups:</h4>
+                            <p>Sharpening older work when time has worn it down.</p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Aftercare Products:</h4>
+                            <p>Shop-recommended products to keep fresh tattoos healing properly and looking bold.</p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Body Piercing:</h4>
+                            <p>Professional body piercing in a studio environment.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- KNOWLEDGE HUB PREVIEW -->
-        <section id="knowledge" class="parallax-section">
+        <!-- OUR TEAM SECTION -->
+        <section id="team" class="parallax-section">
             <div class="frosted-glass panel">
-                <h2>KNOWLEDGE HUB: BAKERSFIELD INK</h2>
-                <div class="posts-grid">
-                    <a href="aftercare-bakersfield-heat.html" class="post-card">
-                        <h3>Tattoo Aftercare in Bakersfield Heat</h3>
-                        <p>What changes when it's 105° out? Don't let the heat wreck your new lines.</p>
-                    </a>
-                    <a href="tattoos/blackwork-vs-oldschool.html" class="post-card">
-                        <h3>Blackwork vs. Old School</h3>
-                        <p>Which style holds up better in the California sun?</p>
-                    </a>
+                <div class="panel-header">
+                    <h2>OUR TEAM</h2>
+                    <p>The people behind the machines—artists and piercers who keep the chairs full.</p>
+                </div>
+                <div class="team-modern-grid">
+                    <div class="team-member">
+                        <h4>Marc DeLeon – Owner • Artist:</h4>
+                        <p>Keeps Mad Dog Tattoo a trusted name in the local tattoo community.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>Resident artists:</h4>
+                        <p>Focused on Blackwork, Old School color, and cover-ups.</p>
+                    </div>
+                    <div class="team-placeholder">
+                        <p>When you're ready, add individual artist photos and style lists here so the crew gets the spotlight, similar to Hardcore's "Our Team" section.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- PRICING & BOOKING -->
+        <!-- PRICING & BOOKING (Unified as seen in Ref 1) -->
         <section id="booking" class="parallax-section">
             <div class="frosted-glass panel">
-                <div class="booking-grid">
-                    <div class="pricing-info">
-                        <h2>PRICING (STRAIGHT UP)</h2>
-                        <p>Final prices come from the artist after hearing your idea. These ranges keep it honest.</p>
-                        <div class="price-bands">
-                            <div class="band">
-                                <strong>Small Tattoos:</strong> Starting at shop minimum.
-                            </div>
-                            <div class="band">
-                                <strong>Piercings:</strong> $40 - $120+ depending on jewelry.
-                            </div>
-                            <div class="band">
-                                <strong>Deposits:</strong> Required for larger work, non-refundable.
+                <div class="booking-modern-layout">
+                    <div class="booking-info-pane">
+                        <div class="info-block-sec">
+                            <h3>PRICING</h3>
+                            <p class="guide-line">Final prices come from the artist after hearing your idea; these are just guidelines.</p>
+                            <div class="price-list">
+                                <p><strong>Single session tattoos:</strong> Small to medium pieces quoted per design and time.</p>
+                                <p><strong>Larger projects:</strong> Sleeves, backs, and multi-session work planned directly with the artist.</p>
+                                <p><strong>Piercings:</strong> Price depends on placement and jewelry choice.</p>
+                                <p><strong>Deposits:</strong> Required for bigger work to hold your time, applied to the final total.</p>
                             </div>
                         </div>
-                        <div class="faq-mini">
-                            <h3>What affects price?</h3>
-                            <p>Size, placement, detail, color, and session count. We don't rush, we do it right.</p>
+
+                        <div class="info-block-sec">
+                            <h3>BOOKING</h3>
+                            <p class="guide-line">Old-school booking: call the shop or walk in. Use the form if you want to send a quick idea first.</p>
+                            <div class="contact-box">
+                                <p><strong>Phone:</strong> (661) 322-8282</p>
+                                <p><strong>Address:</strong> 1218 19th St, Bakersfield, CA 93301</p>
+                                <p class="scam-warn"><strong>Scam warning:</strong> If it's not this number or this address, it's not Mad Dog.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="booking-options">
-                        <h2>BOOKING & SCAM WARNING</h2>
-                        <div class="scam-alert-box">
-                            <p><strong>ALERT:</strong> There are fake profiles pretending to be us. We do NOT book through random DMs or CashApps.</p>
-                            <p>If it's not 1218 19th St or (661) 322-8282, it's NOT Mad Dog Tattoo.</p>
-                        </div>
-                        <div class="contact-details">
-                            <p><strong>Phone:</strong> <a href="tel:6613228282">(661) 322-8282</a></p>
-                            <p><strong>Address:</strong> 1218 19th St, Bakersfield, CA 93301</p>
-                            <div class="cta-stack">
-                                <button class="btn btn-primary quick-consult-trigger">AI QUICK CONSULT</button>
-                                <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">OPEN IN MAPS</a>
+
+                    <div class="booking-form-pane">
+                        <form id="contact-form">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" name="name" required>
                             </div>
-                        </div>
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Message</label>
+                                <textarea name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full ink-bleed">SEND MESSAGE</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -1,55 +1,73 @@
+// SPLASH SCREEN LOGIC
+window.addEventListener('load', () => {
+    const splash = document.getElementById('splash-screen');
+    if (splash) {
+        setTimeout(() => {
+            splash.classList.add('fade-out');
+            document.body.style.overflow = 'auto';
+        }, 2200);
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Prevent scroll until splash is done
+    document.body.style.overflow = 'hidden';
+
     // PARALLAX EFFECT for Panels
     window.addEventListener('scroll', () => {
-        const panels = document.querySelectorAll('.frosted-glass');
+        const panels = document.querySelectorAll('.parallax-section');
         panels.forEach(panel => {
-            const speed = 0.05;
+            const speed = 0.08;
             const rect = panel.getBoundingClientRect();
             const offset = (window.innerHeight - rect.top) * speed;
             if (rect.top < window.innerHeight && rect.bottom > 0) {
-                panel.style.transform = `translateY(${offset}px)`;
+                // Subtle parallax on the container or background can go here
+                // For now, keeping it clean to avoid stutter
             }
         });
     });
 
     // PORTFOLIO POPULATION & FILTERING
     const portfolioData = [
-        { id: 1, type: 'blackwork', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Geometric Blackwork', desc: 'Forearm piece, healed 3 months.' },
-        { id: 2, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Classic American Traditional', desc: 'Bold lines and solid color.' },
-        { id: 3, type: 'coverup', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Name Cover-up', desc: 'Heavy blackwork to mask old ink.' },
-        { id: 4, type: 'piercing', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Industrial Piercing', desc: 'Titanium jewelry, downtown style.' },
-        { id: 5, type: 'blackwork', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Mandala Back Piece', desc: 'Custom blackwork design.' },
-        { id: 6, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Traditional Rose', desc: 'Flash design on shoulder.' }
+        { id: 1, type: 'blackwork', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Geometric Blackwork', desc: 'Custom forearm blackwork, Bakersfield.' },
+        { id: 2, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Classic American', desc: 'Bold lines, vintage color, 19th St.' },
+        { id: 3, type: 'coverup', img: 'maddoglogo.jpg', title: 'Solid Cover-up', desc: 'Burying old ink with bold designs.' },
+        { id: 4, type: 'piercing', img: 'maddoglogo.jpg', title: 'Pro Piercing', desc: 'Clean, safe, professional.' },
+        { id: 5, type: 'blackwork', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Mandala Back', desc: 'Detailed symmetry in black ink.' },
+        { id: 6, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Traditional Rose', desc: 'Classic flash, built to last.' }
     ];
 
     const grid = document.getElementById('portfolio-grid');
     const filterBtns = document.querySelectorAll('.filter-btn');
 
     function renderPortfolio(filter) {
+        if (!grid) return;
         grid.innerHTML = '';
         const items = filter === 'all' ? portfolioData : portfolioData.filter(item => item.type === filter);
         items.forEach(item => {
             const el = document.createElement('div');
             el.className = 'gallery-item';
             el.innerHTML = `
-                <img src="${item.img}" alt="${item.title}">
+                <img src="${item.img}" alt="${item.title}" loading="lazy">
                 <div class="item-overlay">
                     <h4>${item.title}</h4>
                     <p>${item.desc}</p>
                 </div>
             `;
-            el.addEventListener('click', () => openQuickConsult(`I like this ${item.title} piece!`));
+            el.onclick = () => openQuickConsult(`Regarding the ${item.title} piece:`);
             grid.appendChild(el);
         });
     }
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderPortfolio(btn.dataset.filter);
+    if (filterBtns) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderPortfolio(btn.dataset.filter);
+            });
         });
-    });
+    }
 
     renderPortfolio('all');
 
