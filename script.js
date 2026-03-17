@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // PORTFOLIO POPULATION & FILTERING
     const portfolioData = [
-        { id: 1, type: 'blackwork', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Geometric Blackwork', desc: 'Custom forearm blackwork, Bakersfield.' },
-        { id: 2, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Classic American', desc: 'Bold lines, vintage color, 19th St.' },
-        { id: 3, type: 'coverup', img: 'maddoglogo.jpg', title: 'Solid Cover-up', desc: 'Burying old ink with bold designs.' },
-        { id: 4, type: 'piercing', img: 'maddoglogo.jpg', title: 'Pro Piercing', desc: 'Clean, safe, professional.' },
-        { id: 5, type: 'blackwork', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Mandala Back', desc: 'Detailed symmetry in black ink.' },
-        { id: 6, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Traditional Rose', desc: 'Classic flash, built to last.' }
+        { id: 1, type: 'blackwork', img: 'smitty_realism_tattoo_sample_1773736157740.png', title: 'Smitty: Marble Realism', desc: 'Custom black and grey Greek statue sleeve.' },
+        { id: 2, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Traditional Color', desc: 'Bold, vintage American traditional flash.' },
+        { id: 3, type: 'coverup', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Maidenfang: Custom Cover-up', desc: 'Transforming old ink into high-contrast blackwork.' },
+        { id: 4, type: 'piercing', img: 'maddog_neon_storefront_1773736190623.png', title: 'Professional Piercing', desc: 'Downtown Bakersfield standard since 1994.' },
+        { id: 5, type: 'blackwork', img: 'jeff_steele_dog_portrait_tattoo_1773736172385.png', title: 'Jeff Steele: Elite Realism', desc: 'Hyper-realistic animal portraiture.' },
+        { id: 6, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Downtown Flash', desc: 'Solid lines and classic saturation.' }
     ];
 
     const grid = document.getElementById('portfolio-grid');
