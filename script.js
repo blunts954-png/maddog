@@ -27,49 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // PORTFOLIO POPULATION & FILTERING
-    const portfolioData = [
-        { id: 1, type: 'blackwork', img: 'smitty_realism_tattoo_sample_1773736157740.png', title: 'Smitty: Marble Realism', desc: 'Custom black and grey Greek statue sleeve.' },
-        { id: 2, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Traditional Color', desc: 'Bold, vintage American traditional flash.' },
-        { id: 3, type: 'coverup', img: 'blackwork_tattoo_sample_1773729152613.png', title: 'Maidenfang: Custom Cover-up', desc: 'Transforming old ink into high-contrast blackwork.' },
-        { id: 4, type: 'piercing', img: 'maddog_neon_storefront_1773736190623.png', title: 'Professional Piercing', desc: 'Downtown Bakersfield standard since 1994.' },
-        { id: 5, type: 'blackwork', img: 'jeff_steele_dog_portrait_tattoo_1773736172385.png', title: 'Jeff Steele: Elite Realism', desc: 'Hyper-realistic animal portraiture.' },
-        { id: 6, type: 'oldschool', img: 'oldschool_tattoo_sample_1773729168004.png', title: 'Downtown Flash', desc: 'Solid lines and classic saturation.' }
-    ];
-
-    const grid = document.getElementById('portfolio-grid');
-    const filterBtns = document.querySelectorAll('.filter-btn');
-
-    function renderPortfolio(filter) {
-        if (!grid) return;
-        grid.innerHTML = '';
-        const items = filter === 'all' ? portfolioData : portfolioData.filter(item => item.type === filter);
-        items.forEach(item => {
-            const el = document.createElement('div');
-            el.className = 'gallery-item';
-            el.innerHTML = `
-                <img src="${item.img}" alt="${item.title}" loading="lazy">
-                <div class="item-overlay">
-                    <h4>${item.title}</h4>
-                    <p>${item.desc}</p>
-                </div>
-            `;
-            el.onclick = () => openQuickConsult(`Regarding the ${item.title} piece:`);
-            grid.appendChild(el);
-        });
-    }
-
-    if (filterBtns) {
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                renderPortfolio(btn.dataset.filter);
-            });
-        });
-    }
-
-    renderPortfolio('all');
+    // INSTAGRAM GRID INTERACTIVITY
+    const instaItems = document.querySelectorAll('.insta-item');
+    instaItems.forEach(item => {
+        item.onclick = () => openQuickConsult("Regarding one of the recent Instagram pieces:");
+    });
 
     // MODAL & BOT LOGIC
     const modal = document.getElementById('quick-consult-modal');
