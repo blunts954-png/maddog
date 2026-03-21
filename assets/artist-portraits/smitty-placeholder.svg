@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic placeholder portrait for Smitty</title>
+  <desc id="desc">Stylized black and grey realism inspired portrait with strong contrast and a studio lighting halo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040506"/>
+      <stop offset="52%" stop-color="#111316"/>
+      <stop offset="100%" stop-color="#1b1b1d"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="27%" r="38%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".34"/>
+      <stop offset="65%" stop-color="#8a8f97" stop-opacity=".07"/>
+      <stop offset="100%" stop-color="#8a8f97" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111316"/>
+      <stop offset="100%" stop-color="#050607"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="450" cy="304" r="250" fill="url(#halo)"/>
+  <g opacity=".15" stroke="#c7cbd1" stroke-width="5" fill="none">
+    <path d="M132 158c93 4 181 29 266 74"/>
+    <path d="M664 164c-62 11-132 47-208 109"/>
+    <path d="M148 842c78-51 166-84 263-99"/>
+  </g>
+  <g transform="translate(120 120)">
+    <path d="M182 714c43-109 133-164 268-164 137 0 227 55 273 164v146H182z" fill="url(#coat)"/>
+    <path d="M314 530h188v162H314z" fill="#875f49"/>
+    <path d="M266 354c0-146 74-232 174-232 98 0 174 86 174 232 0 136-75 223-174 223-100 0-174-87-174-223z" fill="#b88765"/>
+    <path d="M252 334c8-152 88-244 198-244 92 0 158 62 186 174l-54-8-40 42-57-39-59 45-89-14-85 44z" fill="#19191a"/>
+    <path d="M350 410c22 14 45 21 70 21 26 0 50-7 72-21" stroke="#674834" stroke-linecap="round" stroke-width="9" fill="none"/>
+    <path d="M338 504c31 18 62 27 95 27 33 0 65-9 96-27-17 71-52 117-97 117-47 0-80-42-94-117z" fill="#2b1b18"/>
+    <g opacity=".72" fill="none" stroke="#f4f6f8" stroke-width="4">
+      <path d="M224 782c31-21 72-33 123-35"/>
+      <path d="M525 764c28 5 56 20 83 46"/>
+      <path d="M290 838c22-19 50-30 83-32"/>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="72" y="974" fill="#ffffff" font-size="54" font-weight="700" letter-spacing="4">SMITTY</text>
+    <text x="74" y="1023" fill="#d7dce2" font-size="22" font-weight="700" letter-spacing="7">BLACK &amp; GREY / REALISM / PORTRAITS</text>
+  </g>
+</svg>

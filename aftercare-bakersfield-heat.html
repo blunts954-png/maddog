@@ -7,43 +7,89 @@
     <meta name="description" content="How to heal a tattoo when it's 105 degrees in Kern County. Expert tips on protecting your new ink from the California sun and sweat.">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-theme">
+<body class="dark-theme" data-booking-url="index.html#booking">
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <div class="logo-circle"></div>
+            <div class="brand-text">
+                <h2>MAD DOG TATTOO</h2>
+                <p>TATTOO & BODY PIERCING • BAKERSFIELD, CA</p>
+            </div>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="site-menu">
+            <a href="index.html">HOME</a>
+            <a href="index.html#work">WORK</a>
+            <a href="index.html#team">OUR TEAM</a>
+            <a href="index.html#booking">BOOKING</a>
+            <a href="index.html#booking" class="btn-book">BOOK NOW</a>
+        </div>
+    </nav>
+
     <div class="background-overlay" style="background-image: url('maddoglogo.jpg');"></div>
     
     <main>
         <section class="parallax-section">
             <div class="frosted-glass panel">
-                <a href="index.html" class="btn-text">← Back to Shop</a>
                 <h1>Tattoo Aftercare in the Bakersfield Heat</h1>
                 <div class="knowledge-content">
                     <p class="intro-large">Bakersfield summers are no joke. When it's 105° outside, keeping a fresh tattoo safe requires a different strategy than in cooler climates.</p>
                     
-                    <section>
-                        <h2>1. Sweat is the Enemy</h2>
-                        <p>In Kern County, you're going to sweat. Sweat trapped under a bandage or heavy ointment can cause "bubbling" or infection. We recommend light layers and strictly following our cleaning protocol.</p>
-                    </section>
+                    <div class="aeo-grid">
+                        <div class="aeo-card">
+                            <h3>1. Sweat is the Enemy</h3>
+                            <p>In Kern County, you're going to sweat. Sweat trapped under a bandage or heavy ointment can cause "bubbling" or infection. We recommend light layers and strictly following our cleaning protocol.</p>
+                        </div>
 
-                    <section>
-                        <h2>2. Sun Exposure</h2>
-                        <p>A fresh tattoo is essentially an open wound. UV rays will damage the healing skin and fade the ink before it's even set. Stay in the shade or wear loose cotton clothing that breathes but blocks the light.</p>
-                    </section>
+                        <div class="aeo-card">
+                            <h3>2. Sun Exposure</h3>
+                            <p>A fresh tattoo is essentially an open wound. UV rays will damage the healing skin and fade the ink before it's even set. Stay in the shade or wear loose cotton clothing that breathes but blocks the light.</p>
+                        </div>
 
-                    <section>
-                        <h2>3. Hydration</h2>
-                        <p>Healthy healing starts from the inside. Drink plenty of water to keep your skin elastic and resilient during the scabbing phase.</p>
-                    </section>
+                        <div class="aeo-card">
+                            <h3>3. Hydration</h3>
+                            <p>Healthy healing starts from the inside. Drink plenty of water to keep your skin elastic and resilient during the scabbing phase.</p>
+                        </div>
 
-                    <section>
-                        <h2>4. Recommended Products</h2>
-                        <p>We sell shop-tested aftercare right here on 19th Street. Don't guess with cheap lotions from the drugstore that might contain irritants.</p>
-                    </section>
+                        <div class="aeo-card">
+                            <h3>4. Recommended Products</h3>
+                            <p>We sell shop-tested aftercare right here on 19th Street. Don't guess with cheap lotions from the drugstore that might contain irritants.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-cta">
-                    <p>Got a specific question about your healing tattoo? Call the shop: (661) 322-8282</p>
+                <div class="footer-cta" style="margin-top: 50px; text-align: center;">
+                    <p>Got a specific question about your healing tattoo? <button class="btn btn-primary quick-consult-trigger" data-artist="No Preference" data-service="tattoo">Ask the Bot</button></p>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="frosted-glass">
+        <div class="footer-content">
+            <p>&copy; 2026 Mad Dog Tattoo | 1218 19th St, Bakersfield, CA 93301 | (661) 322-8282</p>
+            <p class="credits">Built by Chaotically Organized AI</p>
+        </div>
+    </footer>
+
+    <!-- QUICK CONSULT BOT UI -->
+    <div id="quick-consult-modal" class="modal">
+        <div class="modal-content frosted-glass">
+            <span class="close-modal">&times;</span>
+            <div id="bot-chat-container">
+                <div class="bot-header">
+                    <h3>Mad Dog Intake Bot</h3>
+                    <p>Tell us your idea in 1-2 minutes.</p>
+                </div>
+                <div id="bot-messages"></div>
+                <div id="bot-input-area"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -7,40 +7,86 @@
     <meta name="description" content="Expert blackwork tattooing in Bakersfield, CA. High contrast, bold geometric and illustrative black ink pieces that survive the Central Valley sun.">
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="dark-theme">
+<body class="dark-theme" data-booking-url="../index.html#booking">
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <div class="logo-circle"></div>
+            <div class="brand-text">
+                <h2>MAD DOG TATTOO</h2>
+                <p>TATTOO & BODY PIERCING • BAKERSFIELD, CA</p>
+            </div>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="site-menu">
+            <a href="../index.html">HOME</a>
+            <a href="../index.html#work">WORK</a>
+            <a href="../index.html#team">OUR TEAM</a>
+            <a href="../index.html#booking">BOOKING</a>
+            <a href="../index.html#booking" class="btn-book">BOOK NOW</a>
+        </div>
+    </nav>
+
     <div class="background-overlay" style="background-image: url('../maddoglogo.jpg');"></div>
     
     <main>
         <section class="parallax-section">
             <div class="frosted-glass panel">
-                <a href="../index.html" class="btn-text">← Back to Shop</a>
                 <h1>Blackwork Tattoos in Bakersfield</h1>
                 <div class="aeo-content">
                     <h2>Heavy Black, High Contrast, Downtown Style</h2>
                     <p>When you're looking for <strong>Blackwork tattoos in downtown Bakersfield</strong>, you want something that reads from across the room and stays sharp for a decade. Mad Dog Tattoo specializes in bold, illustrative, and geometric black ink.</p>
                     
-                    <div class="info-block">
-                        <h3>Who this is for?</h3>
-                        <p>Collectors who appreciate the longevity of solid black ink. Blackwork is the most resilient style for the 100°+ Bakersfield summers.</p>
+                    <div class="aeo-grid">
+                        <div class="aeo-card">
+                            <h3>Who this is for?</h3>
+                            <p>Collectors who appreciate the longevity of solid black ink. Blackwork is the most resilient style for the 100°+ Bakersfield summers.</p>
+                        </div>
+
+                        <div class="aeo-card">
+                            <h3>Process & Sessions</h3>
+                            <p>Small pieces are often finished in one sitting. Larger geometric sleeves or high-saturation panels may require multiple sessions to ensure the black is consistent and saturated.</p>
+                        </div>
+
+                        <div class="aeo-card">
+                            <h3>Local Context</h3>
+                            <p>Located on 19th Street, we've been the go-to for Kern County blackwork for nearly 30 years.</p>
+                        </div>
                     </div>
 
-                    <div class="info-block">
-                        <h3>Process & Sessions</h3>
-                        <p>Small pieces are often finished in one sitting. Larger geometric sleeves or high-saturation panels may require multiple sessions to ensure the black is consistent and saturated.</p>
-                    </div>
-
-                    <div class="info-block">
-                        <h3>Local Context</h3>
-                        <p>Located on 19th Street, we've been the go-to for Kern County blackwork for nearly 30 years.</p>
-                    </div>
-
-                    <div class="cta-strip">
-                        <p>Got a blackwork idea? <button class="btn btn-primary quick-consult-trigger">Get a Quick Consult</button></p>
+                    <div class="cta-strip" style="margin-top: 50px; text-align: center;">
+                        <p>Got a blackwork idea? <button class="btn btn-primary quick-consult-trigger" data-artist="No Preference" data-service="tattoo">Get a Quick Consult</button></p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="frosted-glass">
+        <div class="footer-content">
+            <p>&copy; 2026 Mad Dog Tattoo | 1218 19th St, Bakersfield, CA 93301 | (661) 322-8282</p>
+            <p class="credits">Built by Chaotically Organized AI</p>
+        </div>
+    </footer>
+
+    <!-- QUICK CONSULT BOT UI -->
+    <div id="quick-consult-modal" class="modal">
+        <div class="modal-content frosted-glass">
+            <span class="close-modal">&times;</span>
+            <div id="bot-chat-container">
+                <div class="bot-header">
+                    <h3>Mad Dog Intake Bot</h3>
+                    <p>Tell us your idea in 1-2 minutes.</p>
+                </div>
+                <div id="bot-messages"></div>
+                <div id="bot-input-area"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="../script.js"></script>
 </body>
 </html>

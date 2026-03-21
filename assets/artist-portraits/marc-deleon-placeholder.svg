@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic placeholder portrait for Marc DeLeon</title>
+  <desc id="desc">Stylized portrait illustration with a dark studio backdrop, heavy blackwork motifs, and a confident tattoo artist silhouette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08090d"/>
+      <stop offset="55%" stop-color="#18111a"/>
+      <stop offset="100%" stop-color="#2a1408"/>
+    </linearGradient>
+    <linearGradient id="jacket" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111319"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="28%" r="42%">
+      <stop offset="0%" stop-color="#ff7b00" stop-opacity=".55"/>
+      <stop offset="70%" stop-color="#ff7b00" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#ff7b00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="450" cy="320" r="270" fill="url(#halo)"/>
+  <g opacity=".18" stroke="#ff6a00" stroke-width="6" fill="none">
+    <path d="M110 188c92-62 182-82 268-60"/>
+    <path d="M570 110c78 15 152 54 220 124"/>
+    <path d="M112 822c79-53 160-79 244-76"/>
+  </g>
+  <g transform="translate(120 120)">
+    <path d="M184 714c36-110 118-168 246-174 152 3 241 61 274 174v146H184z" fill="url(#jacket)"/>
+    <path d="M312 530h188v160H312z" fill="#774f36"/>
+    <path d="M260 368c0-145 82-232 178-232s176 87 176 232c0 139-77 228-176 228S260 507 260 368z" fill="#b98462"/>
+    <path d="M232 368c0-152 84-258 210-258 90 0 164 41 208 123l-8 92-51-48-45 62-53-38-38 70-112-20-54 35z" fill="#121315"/>
+    <path d="M324 350c14 19 37 28 68 27 29 1 51-8 67-27" stroke="#70452b" stroke-linecap="round" stroke-width="9" fill="none"/>
+    <path d="M322 512c33 24 67 37 105 37 40 0 76-13 111-37-13 74-46 127-109 127-63 0-95-46-107-127z" fill="#261712"/>
+    <path d="M334 408c16 15 35 22 56 22 22 0 40-7 55-22" stroke="#43261c" stroke-linecap="round" stroke-width="8" fill="none"/>
+    <path d="M270 738c46-41 111-62 193-62s150 21 204 62" stroke="#ff6a00" stroke-opacity=".4" stroke-width="5" fill="none"/>
+    <g opacity=".7" fill="none" stroke="#d7dce2" stroke-width="4">
+      <path d="M232 760l44-40 42 40-42 40z"/>
+      <path d="M590 780l18-58 18 58-47-34h58z"/>
+      <path d="M308 828c19-18 44-27 75-27"/>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="start">
+    <text x="72" y="974" fill="#ffffff" font-size="54" font-weight="700" letter-spacing="4">MARC DELEON</text>
+    <text x="74" y="1023" fill="#ff7b00" font-size="22" font-weight="700" letter-spacing="7">OWNER / BLACKWORK / COVER-UPS</text>
+  </g>
+</svg>

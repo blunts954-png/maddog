@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mad Dog Tattoo & Body Piercing | Tattoo Shop in Bakersfield, CA</title>
-    <meta name="description" content="Mad Dog Tattoo & Body Piercing in downtown Bakersfield, CA. Black & Grey Realism, Old School, cover-ups, and body piercings. Walk-ins welcome. Call (661) 322-8282.">
+    <title>Mad Dog Tattoo &amp; Body Piercing | Bakersfield Tattoo Shop Since 1994</title>
+    <meta name="description" content="Mad Dog Tattoo &amp; Body Piercing is a downtown Bakersfield tattoo shop for blackwork, realism, old school, cover-ups, and professional piercing. Walk-ins welcome. Custom booking requests available.">
+    <meta name="theme-color" content="#0a0a0c">
+    <meta property="og:title" content="Mad Dog Tattoo &amp; Body Piercing | Bakersfield Tattoo Shop Since 1994">
+    <meta property="og:description" content="Downtown Bakersfield tattooing and body piercing with bold custom work, walk-ins, and artist-led booking requests.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maddogtattoobakersfield.com/">
+    <meta property="og:image" content="https://maddogtattoobakersfield.com/maddoglogo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://maddogtattoobakersfield.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- LocalBusiness + TattooParlor + FAQ Schema -->
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -16,9 +26,9 @@
           "@type": "TattooParlor",
           "@id": "https://maddogtattoobakersfield.com/#organization",
           "name": "Mad Dog Tattoo & Body Piercing",
-          "image": "maddoglogo.jpg",
-          "url": "https://maddogtattoobakersfield.com",
-          "telephone": "(661) 322-8282",
+          "image": "https://maddogtattoobakersfield.com/maddoglogo.jpg",
+          "url": "https://maddogtattoobakersfield.com/",
+          "telephone": "+1-661-322-8282",
           "priceRange": "$$",
           "address": {
             "@type": "PostalAddress",
@@ -28,38 +38,20 @@
             "postalCode": "93301",
             "addressCountry": "US"
           },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 35.3765,
-            "longitude": -119.0187
-          },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-              "opens": "11:00",
-              "closes": "20:00"
-            }
-          ],
           "sameAs": [
-            "https://www.google.com/maps/place/Mad+Dog+Tattoo/@35.376483,-119.018659,15z",
             "https://www.instagram.com/mad_dog_tattoo/"
           ],
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.6",
-            "reviewCount": "500"
-          }
+          "acceptsReservations": true
         },
         {
           "@type": "FAQPage",
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Do you take deposits or Cash App?",
+              "name": "How do I book with Mad Dog Tattoo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No, we do walk-ins. We do not take online deposits or payments via Cash App. All bookings are handled in person at our shop to protect against scammers."
+                "text": "Walk-ins are welcome, and larger custom pieces can be started with the booking request form on this site or by calling the shop directly. Mad Dog does not collect deposits through DMs, Cash App, or fake social accounts."
               }
             },
             {
@@ -67,7 +59,15 @@
               "name": "Do you accept walk-ins for tattoos and piercings?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, we are Bakersfield's oldest dedicated walk-in shop. Walk-ins are welcome for both tattoos and piercings every day during business hours."
+                "text": "Yes. Mad Dog keeps room for walk-ins and same-week work whenever possible for both tattoos and piercings."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know I'm talking to the real shop?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use the phone number on this site, visit the shop in person at 1218 19th St, or message through the official Instagram linked here. Never send money to impersonators asking for deposits on unofficial apps."
               }
             }
           ]
@@ -76,189 +76,236 @@
     }
     </script>
 </head>
-<body class="dark-theme">
-    <!-- SPLASH SCREEN -->
-    <div id="splash-screen">
-        <img src="maddoglogo.jpg" alt="Mad Dog Tattoo" class="splash-logo">
+<body class="dark-theme home-page" data-booking-url="index.html#booking">
+    <div id="splash-screen" aria-hidden="true">
+        <img src="maddoglogo.jpg" alt="Mad Dog Tattoo logo" class="splash-logo">
     </div>
 
     <nav class="main-nav">
-        <div class="nav-brand">
+        <a href="#hero" class="nav-brand" aria-label="Mad Dog Tattoo home">
             <div class="logo-circle"></div>
             <div class="brand-text">
                 <h2>MAD DOG TATTOO</h2>
-                <p>TATTOO & BODY PIERCING • BAKERSFIELD, CA</p>
+                <p>Tattoo &amp; Body Piercing • Bakersfield, CA</p>
             </div>
-        </div>
-        <div class="nav-links">
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="site-menu">
             <a href="#work">WORK</a>
             <a href="#about">ABOUT</a>
             <a href="#services">SERVICES</a>
-            <a href="#team">OUR TEAM</a>
-            <a href="#booking">PRICING</a>
+            <a href="#team">ARTISTS</a>
+            <a href="#experience">PROCESS</a>
             <a href="#booking">BOOKING</a>
-            <a href="#booking" class="btn-book">BOOK NOW</a>
+            <a href="aftercare-bakersfield-heat.html">AFTERCARE</a>
+            <a href="#booking" class="btn-book">REQUEST TIME</a>
         </div>
     </nav>
 
-    <div class="background-overlay" style="background-image: url('maddoglogo.jpg');"></div>
+    <div class="background-overlay" style="background-image: url('dark_textured_background_maddog_1773729064003.png');"></div>
     <header class="parallax-section" id="hero">
-        <div class="frosted-glass hero-container">
+        <div class="frosted-glass hero-container reveal">
             <div class="hero-main">
-                <div class="hero-badge">ESTABLISHED 1994 • BAKERSFIELD, CA</div>
-                <h1 class="hero-glow-text">MAD DOG TATTOO & PIERCING</h1>
-                <p class="sub-line">
-                    The city's gold-standard since 1994. Black & Grey Realism, Elite Script, and Traditional American work. Handled with 30 years of Downtown Bakersfield history.
-                </p>
-                
+                <div class="hero-badge">Established 1994 • Downtown Bakersfield</div>
+                <h1 class="hero-glow-text">Bold work. Real artists. No scam deposits.</h1>
+                <p class="sub-line">Mad Dog Tattoo &amp; Body Piercing is built for collectors who want clean custom work, old-school standards, and a shop that still feels like Bakersfield.</p>
+
                 <div class="hero-status-row">
-                    <div class="status-box"><span>★ 4.6</span> 500+ Reviews</div>
-                    <div class="status-box">10 Artists / 2 Piercers</div>
-                    <div class="status-box">Downtown 19th Street</div>
+                    <div class="status-box"><span>01</span> Walk-ins welcome</div>
+                    <div class="status-box"><span>02</span> Custom appointments available</div>
+                    <div class="status-box"><span>03</span> Tattoos, cover-ups, and piercing</div>
                 </div>
-                
+
                 <div class="cta-row">
-                    <button class="btn btn-primary pulse-call" onclick="window.location.href='tel:6613228282'">CALL THE SHOP</button>
-                    <a href="#work" class="btn btn-secondary">SEE WORK</a>
+                    <a href="tel:6613228282" class="btn btn-primary pulse-call">Call The Shop</a>
+                    <a href="#booking" class="btn btn-secondary">Start Booking Request</a>
+                    <button type="button" class="btn btn-tertiary quick-consult-trigger" data-artist="No Preference">Quick Consult</button>
                 </div>
-                
-                <p class="scam-notice"><strong>NO ONLINE DEPOSITS.</strong> We don't do DMs or Cash App. Book in person at 1218 19th St.</p>
+
+                <p class="scam-notice"><strong>No online deposits through DMs.</strong> All booking requests are reviewed by the actual shop, and any payment is handled only through approved channels from the front desk.</p>
+            </div>
+
+            <div class="hero-rail">
+                <article class="hero-rail-card">
+                    <p class="rail-kicker">What We’re Best At</p>
+                    <h3>Blackwork, realism, old school, lettering, cover-ups, and clean piercing setups.</h3>
+                    <p>Pick an artist, send a clear idea, and the desk can match you to the right chair faster.</p>
+                </article>
+                <article class="hero-rail-card">
+                    <p class="rail-kicker">Booking That Works</p>
+                    <h3>Use the request form for larger pieces, preferred artists, cover-ups, and piercing questions.</h3>
+                    <p>Walk-ins still make sense for fast decisions. The form handles the projects that need real intake.</p>
+                </article>
             </div>
         </div>
     </header>
 
-    <!-- INSTAGRAM FEED OVERRIDE -->
     <section id="work" class="parallax-section">
-        <div class="frosted-glass panel">
-            <div class="panel-header">
-                <h2>INSTAGRAM FEED</h2>
-                <p>Live from @mad_dog_tattoo — Bakersfield's Downtown Institution.</p>
+        <div class="frosted-glass panel reveal">
+                <div class="panel-header panel-header-split">
+                    <div>
+                        <h2>RECENT WORK</h2>
+                        <p>Fresh pieces, studio moments, and recent work from the official Mad Dog Instagram.</p>
+                    </div>
+                <div class="feed-status-wrap">
+                    <span class="feed-pill">INSTAGRAM</span>
+                    <p id="instagram-feed-status">Loading recent pieces from the shop feed.</p>
+                </div>
             </div>
-            
-            <div class="instagram-grid">
-                <div class="insta-item"><img src="smitty_realism_tattoo_sample_1773736157740.png" alt="Instagram Post"></div>
-                <div class="insta-item"><img src="oldschool_tattoo_sample_1773729168004.png" alt="Instagram Post"></div>
-                <div class="insta-item"><img src="blackwork_tattoo_sample_1773729152613.png" alt="Instagram Post"></div>
-                <div class="insta-item"><img src="jeff_steele_dog_portrait_tattoo_1773736172385.png" alt="Instagram Post"></div>
-                <div class="insta-item"><img src="oldschool_tattoo_sample_1773729168004.png" alt="Instagram Post"></div>
-                <div class="insta-item"><img src="maddog_neon_storefront_1773736190623.png" alt="Instagram Post"></div>
+
+            <div id="instagram-feed" class="instagram-grid instagram-grid-live" aria-live="polite">
+                <article class="insta-card insta-skeleton"></article>
+                <article class="insta-card insta-skeleton"></article>
+                <article class="insta-card insta-skeleton"></article>
+                <article class="insta-card insta-skeleton"></article>
+                <article class="insta-card insta-skeleton"></article>
+                <article class="insta-card insta-skeleton"></article>
             </div>
 
             <div class="insta-cta">
-                <a href="https://www.instagram.com/mad_dog_tattoo/" target="_blank" class="btn btn-secondary neon-btn">FOLLOW @MAD_DOG_TATTOO</a>
+                <a href="https://www.instagram.com/mad_dog_tattoo/" target="_blank" rel="noreferrer" class="btn btn-secondary neon-btn">Open @mad_dog_tattoo</a>
             </div>
         </div>
     </section>
 
     <main>
-        <!-- ABOUT SECTION -->
         <section id="about" class="parallax-section">
-            <div class="frosted-glass panel">
+            <div class="frosted-glass panel reveal">
                 <div class="panel-header">
-                    <h2>ABOUT MAD DOG TATTOO</h2>
-                    <p>A long-running Bakersfield shop where art meets skin and the focus is real work, not trends.</p>
+                    <h2>ABOUT MAD DOG</h2>
+                    <p>Downtown roots, heavy standards, and a front desk that protects people from fake accounts.</p>
                 </div>
                 <div class="about-grid-new">
                     <div class="about-text">
-                        <p>Mad Dog Tattoo has been the bedrock of Bakersfield’s 19th Street since <strong>1994</strong>. We were here before the digital age, and we’ll be here after. We are the city's oldest dedicated walk-in shop.</p>
-                        <p>Specializing in <strong>Black & Grey Realism</strong>, <strong>Elite Script</strong>, and <strong>Traditional American</strong> work, our philosophy is simple: tattoos should look like tattoos—bold, clean, and built to survive the Bakersfield sun.</p>
-                        <p>Services include hyper-realistic portraits, custom lettering, industry-leading cover-ups, and professional body piercing.</p>
+                        <p>Mad Dog Tattoo has been part of 19th Street since <strong>1994</strong>. The shop reputation comes from work that holds up, artists who know their lane, and a front desk that keeps clients clear of fake booking scams.</p>
+                        <p>This is a place for bold tattoos, readable lettering, serious cover-ups, and clean professional piercing. People come here because they want a real shop experience, not a generic booking funnel.</p>
+                        <p>If you already know what you want, request an artist. If you need guidance, send the idea through and let the shop match you to the right chair.</p>
                     </div>
-                    <div class="about-text-secondary">
-                        <p>We’ve been featured in local news for our aggressive stance against online scammers. At Mad Dog, we protect our client's money and their skin. We don't do DMs, we don't do digital deposits. You walk in, we work. Owner <strong>Marc DeLeon</strong> wouldn't have it any other way.</p>
+                    <div class="about-utility">
+                        <div class="trust-stack">
+                            <article class="trust-card">
+                                <span>Address</span>
+                                <strong>1218 19th St</strong>
+                                <p>Bakersfield, CA 93301</p>
+                            </article>
+                            <article class="trust-card">
+                                <span>Phone</span>
+                                <strong>(661) 322-8282</strong>
+                                <p>Best for walk-ins and same-day availability.</p>
+                            </article>
+                            <article class="trust-card">
+                                <span>Booking Fit</span>
+                                <strong>Custom and same-week work</strong>
+                                <p>The form is ideal for larger ideas, cover-ups, and preferred artist requests.</p>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SERVICES SECTION -->
         <section id="services" class="parallax-section">
-            <div class="frosted-glass panel">
+            <div class="frosted-glass panel reveal">
                 <div class="panel-header">
                     <h2>SERVICES</h2>
-                    <p>The core menu Mad Dog offers—no fluff, just what they actually do every day.</p>
+                    <p>What clients ask for most, organized by the work the shop is known for.</p>
                 </div>
-                
-                <div class="services-modern-grid">
-                    <div class="service-col">
-                        <div class="service-item">
-                            <h4>Custom Tattoos:</h4>
-                            <p>One-off pieces built around your idea, placement, and style.</p>
-                        </div>
-                        <div class="service-item">
-                            <h4>Flash Tattoos:</h4>
-                            <p>Classic designs when you want something ready to go.</p>
-                        </div>
-                        <div class="service-item">
-                            <h4>Cover-Up Tattoos:</h4>
-                            <p>Transforming old or unwanted tattoos into new work that fits your skin and story.</p>
-                        </div>
-                    </div>
-                    <div class="service-col">
-                        <div class="service-item">
-                            <h4>Tattoo Touch-Ups:</h4>
-                            <p>Sharpening older work when time has worn it down.</p>
-                        </div>
-                        <div class="service-item">
-                            <h4>Aftercare Products:</h4>
-                            <p>Shop-recommended products to keep fresh tattoos healing properly and looking bold.</p>
-                        </div>
-                        <div class="service-item">
-                            <h4>Body Piercing:</h4>
-                            <p>Professional body piercing in a studio environment.</p>
-                        </div>
-                    </div>
+
+                <div class="service-card-grid">
+                    <article class="service-card">
+                        <span class="service-icon">01</span>
+                        <h3>Custom Tattoos</h3>
+                        <p>Artist-led concept work built around placement, scale, and style fit.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon">02</span>
+                        <h3>Black &amp; Grey Realism</h3>
+                        <p>Portraits, memorials, and high-contrast shading for larger statement work.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon">03</span>
+                        <h3>Old School &amp; Flash</h3>
+                        <p>Bold lines, readable color, classic iconography, and same-day possibilities.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon">04</span>
+                        <h3>Cover-Ups</h3>
+                        <p>Strategic redesigns for old names, faded work, or tattoos that never landed right.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon">05</span>
+                        <h3>Lettering</h3>
+                        <p>Script, names, quotes, and clean readability across small and medium placements.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon">06</span>
+                        <h3>Body Piercing</h3>
+                        <p>Professional setups with a safety-first approach and anatomy-conscious placement.</p>
+                    </article>
+                </div>
+
+                <div class="style-chip-row">
+                    <span class="tag">Blackwork</span>
+                    <span class="tag">Realism</span>
+                    <span class="tag">Traditional</span>
+                    <span class="tag">Illustrative</span>
+                    <span class="tag">Piercing</span>
+                    <span class="tag">Cover-Ups</span>
+                    <span class="tag">Walk-Ins</span>
                 </div>
             </div>
         </section>
 
-        <!-- OUR TEAM SECTION -->
         <section id="team" class="parallax-section">
-            <div class="frosted-glass panel">
+            <div class="frosted-glass panel reveal">
                 <div class="panel-header">
-                    <h2>OUR TEAM</h2>
-                    <p>The people behind the machines—artists and piercers who keep the chairs full.</p>
+                    <h2>ARTISTS &amp; PIERCERS</h2>
+                    <p>Meet the people behind the machines and choose the style fit that makes the most sense for your project.</p>
                 </div>
                 <div class="team-artist-grid">
                     <a href="artists/marc-deleon-blackwork-bakersfield.html" class="artist-shot-card">
-                        <img src="artist_1_portrait_1773798904283.png" alt="Marc DeLeon">
+                        <img src="assets/artist-portraits/marc-deleon-placeholder.svg" alt="Marc DeLeon placeholder portrait" loading="lazy">
                         <div class="artist-shot-overlay">
-                            <h4>MARC DELEON</h4>
-                            <span>Owner / Head Artist</span>
+                            <h4>Marc DeLeon</h4>
+                            <span>Owner / Blackwork / Cover-Ups</span>
                         </div>
                     </a>
-                    <a href="artists/marc-deleon-blackwork-bakersfield.html" class="artist-shot-card">
-                        <img src="artist_2_portrait_1773798919822.png" alt="Tyler Reed @maidenfang">
+                    <a href="artists/tyler-reed-illustrative-bakersfield.html" class="artist-shot-card">
+                        <img src="assets/artist-portraits/tyler-reed-placeholder.svg" alt="Tyler Reed placeholder portrait" loading="lazy">
                         <div class="artist-shot-overlay">
-                            <h4>TYLER REED</h4>
-                            <span>@maidenfang / Illustrative</span>
+                            <h4>Tyler Reed</h4>
+                            <span>Illustrative / Custom Work</span>
                         </div>
                     </a>
-                    <a href="artists/marc-deleon-blackwork-bakersfield.html" class="artist-shot-card">
-                        <img src="artist_3_portrait_1773798937248.png" alt="Smitty @smittytattoo">
+                    <a href="artists/smitty-realism-bakersfield.html" class="artist-shot-card">
+                        <img src="assets/artist-portraits/smitty-placeholder.svg" alt="Smitty placeholder portrait" loading="lazy">
                         <div class="artist-shot-overlay">
-                            <h4>SMITTY</h4>
-                            <span>@smittytattoo / Realism</span>
+                            <h4>Smitty</h4>
+                            <span>Black &amp; Grey Realism</span>
                         </div>
                     </a>
-                    <a href="artists/marc-deleon-blackwork-bakersfield.html" class="artist-shot-card">
-                        <img src="artist_4_portrait_1773798960322.png" alt="Bret Trout @brettrout">
+                    <a href="artists/bret-trout-resident-bakersfield.html" class="artist-shot-card">
+                        <img src="assets/artist-portraits/bret-trout-placeholder.svg" alt="Bret Trout placeholder portrait" loading="lazy">
                         <div class="artist-shot-overlay">
-                            <h4>BRET TROUT</h4>
-                            <span>@brettrout / Resident Artist</span>
+                            <h4>Bret Trout</h4>
+                            <span>Lettering / Traditional</span>
                         </div>
                     </a>
-                    <a href="artists/marc-deleon-blackwork-bakersfield.html" class="artist-shot-card">
-                        <img src="artist_5_portrait_1773798974559.png" alt="Rex King @rexkingtattoo">
+                    <a href="artists/rex-king-oldschool-bakersfield.html" class="artist-shot-card">
+                        <img src="assets/artist-portraits/rex-king-placeholder.svg" alt="Rex King placeholder portrait" loading="lazy">
                         <div class="artist-shot-overlay">
-                            <h4>REX KING</h4>
-                            <span>@rexkingtattoo / Old School</span>
+                            <h4>Rex King</h4>
+                            <span>Old School / Flash</span>
                         </div>
                     </a>
-                    <a href="artists/marc-deleon-blackwork-bakersfield.html" class="artist-shot-card">
-                        <img src="artist_6_portrait_1773798992813.png" alt="Chris & Jocelyn">
+                    <a href="artists/piercing-specialists-bakersfield.html" class="artist-shot-card">
+                        <img src="assets/artist-portraits/piercing-specialists-placeholder.svg" alt="Chris and Jocelyn placeholder portrait" loading="lazy">
                         <div class="artist-shot-overlay">
-                            <h4>CHRIS & JOCELYN</h4>
+                            <h4>Chris &amp; Jocelyn</h4>
                             <span>Piercing Specialists</span>
                         </div>
                     </a>
@@ -266,80 +313,195 @@
             </div>
         </section>
 
-        <!-- AEO Q&A SECTION -->
-        <section id="faq" class="parallax-section">
-            <div class="frosted-glass panel">
+        <section id="experience" class="parallax-section">
+            <div class="frosted-glass panel reveal">
                 <div class="panel-header">
-                    <h2>COMMON QUESTIONS</h2>
-                    <p>Straight answers for Bakersfield tattoo collectors.</p>
+                    <h2>HOW THE BOOKING FLOW WORKS</h2>
+                    <p>For custom projects, cover-ups, and preferred artist requests, this is the simplest path from idea to appointment.</p>
                 </div>
-                <div class="aeo-grid">
-                    <div class="aeo-card">
-                        <h3>How do I book a tattoo at Mad Dog?</h3>
-                        <p>We are a walk-in shop. Simply walk into our studio at 1218 19th St between 11 AM and 8 PM. We do not handle booking via DM or online apps.</p>
-                    </div>
-                    <div class="aeo-card">
-                        <h3>Do you accept walk-ins for tattoos and piercings?</h3>
-                        <p>Yes. We are Bakersfield's oldest dedicated walk-in shop. We keep our floor ready for spontaneous projects every single day.</p>
-                    </div>
-                    <div class="aeo-card">
-                        <h3>How do I avoid Mad Dog scammers online?</h3>
-                        <p>Never send a deposit online. We do not use Cash App, Venmo, or PayPal for deposits. If someone asks for money online, it's not us.</p>
-                    </div>
+                <div class="experience-grid">
+                    <article class="experience-card">
+                        <span class="experience-step">1</span>
+                        <h3>Send the idea</h3>
+                        <p>Tell the desk what you want, where it goes, your budget range, and who you want to work with.</p>
+                    </article>
+                    <article class="experience-card">
+                        <span class="experience-step">2</span>
+                        <h3>Get matched</h3>
+                        <p>Requests route by style so realism, old school, lettering, and piercing do not all get treated the same.</p>
+                    </article>
+                    <article class="experience-card">
+                        <span class="experience-step">3</span>
+                        <h3>Lock the consult</h3>
+                        <p>The shop confirms fit, timing, and any next-step details through approved contact channels only.</p>
+                    </article>
+                    <article class="experience-card">
+                        <span class="experience-step">4</span>
+                        <h3>Show up ready</h3>
+                        <p>Bring references, ID, and your placement plan. No fake deposit links, no confusion, no guesswork.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- PRICING & BOOKING (Unified as seen in Ref 1) -->
+        <section id="faq" class="parallax-section">
+            <div class="frosted-glass panel reveal">
+                <div class="panel-header">
+                    <h2>COMMON QUESTIONS</h2>
+                    <p>Straight answers before you make the call or send the request.</p>
+                </div>
+                <div class="aeo-grid">
+                    <article class="aeo-card">
+                        <h3>Do you take walk-ins?</h3>
+                        <p>Yes. Mad Dog still works like a real street-level shop. Walk-ins are welcome, and the request form is best for bigger custom projects or preferred artist scheduling.</p>
+                    </article>
+                    <article class="aeo-card">
+                        <h3>How do I know a payment request is real?</h3>
+                        <p>If it is not confirmed through the actual shop number, the official website, or the official Instagram, do not pay it. The site is designed to make that policy impossible to miss.</p>
+                    </article>
+                    <article class="aeo-card">
+                        <h3>Can I request a specific artist?</h3>
+                        <p>Yes. The booking form lets clients choose an artist directly, and artist pages can prefill the request so the desk sees the match instantly.</p>
+                    </article>
+                    <article class="aeo-card">
+                        <h3>Do you accept walk-ins for tattoos and piercings?</h3>
+                        <p>Yes. We are Bakersfield's oldest dedicated walk-in shop. We keep our floor ready for spontaneous projects every single day.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="booking" class="parallax-section">
-            <div class="frosted-glass panel">
-                <div class="booking-modern-layout">
+            <div class="frosted-glass panel reveal">
+                <div class="panel-header">
+                    <h2>BOOKING REQUEST</h2>
+                    <p>Use this form for larger projects, preferred artist requests, cover-ups, and piercing questions that need a real response from the desk.</p>
+                </div>
+                <div class="booking-modern-layout booking-modern-layout-upgraded">
                     <div class="booking-info-pane">
                         <div class="info-block-sec">
-                            <h3>PRICING</h3>
-                            <p class="guide-line">Final prices come from the artist after hearing your idea; these are just guidelines.</p>
+                            <h3>WHAT THIS FORM DOES</h3>
+                            <p class="guide-line">Use it for custom tattoos, preferred artist requests, and piercing questions that need a real response from the desk.</p>
                             <div class="price-list">
-                                <p><strong>Single session tattoos:</strong> Small to medium pieces quoted per design and time.</p>
-                                <p><strong>Larger projects:</strong> Sleeves, backs, and multi-session work planned directly with the artist.</p>
-                                <p><strong>Piercings:</strong> Price depends on placement and jewelry choice.</p>
-                                <p><strong>Deposits:</strong> Required for bigger work to hold your time, applied to the final total.</p>
+                                <p><strong>Small and walk-in tattoos:</strong> calling the shop is still the fastest path.</p>
+                                <p><strong>Larger custom projects:</strong> include style, placement, size, and budget so the right artist sees it first.</p>
+                                <p><strong>Piercings:</strong> ask about placement, timing, and jewelry fit with the piercing team.</p>
                             </div>
                         </div>
 
                         <div class="info-block-sec">
-                            <h3>BOOKING</h3>
-                            <p class="guide-line">Old-school booking: call the shop or walk in. Use the form if you want to send a quick idea first.</p>
+                            <h3>DIRECT CONTACT</h3>
+                            <p class="guide-line">If you need same-day information, do not wait on email.</p>
                             <div class="contact-box">
-                                <p><strong>Phone:</strong> (661) 322-8282</p>
+                                <p><strong>Phone:</strong> <a href="tel:6613228282">(661) 322-8282</a></p>
                                 <p><strong>Address:</strong> 1218 19th St, Bakersfield, CA 93301</p>
-                                <p class="scam-warn"><strong>Scam warning:</strong> If it's not this number or this address, it's not Mad Dog.</p>
+                                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/mad_dog_tattoo/" target="_blank" rel="noreferrer">@mad_dog_tattoo</a></p>
+                                <p class="scam-warn"><strong>Scam warning:</strong> never send money to random profiles claiming to hold your appointment.</p>
                             </div>
                         </div>
-                        
+
                         <div class="info-block-sec">
-                            <h3>LOCATED IN DOWNTOWN BAKERSFIELD</h3>
-                            <p class="neighborhoods">Serving: Downtown, Oleander-Sunset, Westchester, East Bakersfield, Oildale, and Kern County.</p>
-                            <div class="map-embed">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1d3264.449733479536!2d-119.01915902347515!3d35.37648744747478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ea69f98f480373%3A0xc6c4f0393b480373!2sMad%20Dog%20Tattoo!5e0!3m2!1sen!2sus!4v1710680000000!5m2!1sen!2sus" width="100%" height="250" style="border:0; border-radius: 12px; filter: grayscale(1) invert(1);" allowfullscreen="" loading="lazy"></iframe>
+                            <h3>NEARBY &amp; AFTERCARE</h3>
+                            <p class="neighborhoods">Serving Downtown, Westchester, Oleander-Sunset, Oildale, East Bakersfield, and clients across Kern County.</p>
+                            <div class="action-links">
+                                <a href="aftercare-bakersfield-heat.html" class="btn btn-tertiary">Read Summer Aftercare</a>
+                                <a href="https://maps.google.com/?q=1218+19th+St+Bakersfield+CA+93301" target="_blank" rel="noreferrer" class="btn btn-tertiary">Open Map</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="booking-form-pane">
-                        <form id="contact-form">
-                            <div class="input-group">
-                                <label>Name</label>
-                                <input type="text" name="name" placeholder="Full Name" required>
+                    <div class="booking-form-pane booking-form-pane-upgraded">
+                        <form id="booking-form" novalidate>
+                            <div class="form-grid">
+                                <div class="input-group">
+                                    <label for="booking-name">Name</label>
+                                    <input id="booking-name" type="text" name="name" placeholder="Full name" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="booking-email">Email</label>
+                                    <input id="booking-email" type="email" name="email" placeholder="email@address.com" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="booking-phone">Phone</label>
+                                    <input id="booking-phone" type="tel" name="phone" placeholder="Best callback number" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="booking-instagram">Instagram</label>
+                                    <input id="booking-instagram" type="text" name="instagram" placeholder="@handle if preferred">
+                                </div>
+                                <div class="input-group">
+                                    <label for="booking-service">Service</label>
+                                    <select id="booking-service" name="service" required>
+                                        <option value="">Choose a service</option>
+                                        <option value="tattoo">Tattoo</option>
+                                        <option value="cover-up">Cover-Up</option>
+                                        <option value="piercing">Piercing</option>
+                                        <option value="consultation">Consultation Only</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label for="booking-artist">Preferred Artist</label>
+                                    <select id="booking-artist" name="artist" required>
+                                        <option value="">Choose an artist</option>
+                                        <option value="No Preference">No Preference</option>
+                                        <option value="Marc DeLeon">Marc DeLeon</option>
+                                        <option value="Tyler Reed">Tyler Reed</option>
+                                        <option value="Smitty">Smitty</option>
+                                        <option value="Bret Trout">Bret Trout</option>
+                                        <option value="Rex King">Rex King</option>
+                                        <option value="Chris &amp; Jocelyn">Chris &amp; Jocelyn</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label for="booking-placement">Placement</label>
+                                    <input id="booking-placement" type="text" name="placement" placeholder="Forearm, chest, nostril, etc." required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="booking-budget">Budget Range</label>
+                                    <select id="booking-budget" name="budget" required>
+                                        <option value="">Select budget</option>
+                                        <option value="under-200">Under $200</option>
+                                        <option value="200-500">$200 - $500</option>
+                                        <option value="500-1000">$500 - $1,000</option>
+                                        <option value="1000-plus">$1,000+</option>
+                                        <option value="need-quote">Need a quote</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label for="booking-date">Preferred Date</label>
+                                    <input id="booking-date" type="date" name="preferredDate">
+                                </div>
+                                <div class="input-group">
+                                    <label for="booking-availability">Availability</label>
+                                    <select id="booking-availability" name="availability" required>
+                                        <option value="">Choose availability</option>
+                                        <option value="same-week">Same week</option>
+                                        <option value="next-two-weeks">Next 2 weeks</option>
+                                        <option value="flexible">Flexible</option>
+                                        <option value="weekdays-only">Weekdays only</option>
+                                        <option value="weekends-only">Weekends only</option>
+                                    </select>
+                                </div>
+                                <div class="input-group input-group-full">
+                                    <label for="booking-reference">Reference Link</label>
+                                    <input id="booking-reference" type="url" name="referenceUrl" placeholder="Instagram post, Pinterest board, Google Drive link, etc.">
+                                </div>
+                                <div class="input-group input-group-full">
+                                    <label for="booking-message">Idea Details</label>
+                                    <textarea id="booking-message" name="message" rows="6" placeholder="Describe the idea, style, approximate size, black-and-grey or color, and anything the artist should know." required></textarea>
+                                </div>
+                                <div class="input-group hp-field" aria-hidden="true">
+                                    <label for="booking-website">Website</label>
+                                    <input id="booking-website" type="text" name="website" tabindex="-1" autocomplete="off">
+                                </div>
+                                <label class="consent-check">
+                                    <input type="checkbox" name="consent" value="yes" required>
+                                    <span>I understand this is a booking request, not a guaranteed appointment or deposit invoice.</span>
+                                </label>
                             </div>
-                            <div class="input-group">
-                                <label>Email</label>
-                                <input type="email" name="email" placeholder="email@address.com" required>
-                            </div>
-                            <div class="input-group">
-                                <label>Message</label>
-                                <textarea name="message" rows="5" placeholder="Tell us about your idea, size, and placement..." required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-full ink-bleed">SEND MESSAGE</button>
+                            <button type="submit" class="btn btn-primary btn-full ink-bleed">Send Booking Request</button>
+                            <p class="form-disclaimer">If the desk is offline or you need same-day information, call the shop directly.</p>
+                            <div id="booking-feedback" class="booking-feedback" role="status" aria-live="polite"></div>
                         </form>
                     </div>
                 </div>
@@ -348,25 +510,34 @@
     </main>
 
     <footer class="frosted-glass">
-        <div class="footer-content">
-            <p>&copy; 2026 Mad Dog Tattoo | 1218 19th St, Bakersfield, CA 93301 | (661) 322-8282</p>
-            <p class="credits">Built by Chaotically Organized AI</p>
+        <div class="footer-content footer-content-upgraded">
+            <div>
+                <p>&copy; 2026 Mad Dog Tattoo &amp; Body Piercing</p>
+                <p>1218 19th St, Bakersfield, CA 93301</p>
+            </div>
+            <div>
+                <p><a href="tel:6613228282">(661) 322-8282</a></p>
+                <p><a href="https://www.instagram.com/mad_dog_tattoo/" target="_blank" rel="noreferrer">@mad_dog_tattoo</a></p>
+            </div>
         </div>
     </footer>
 
-    <!-- QUICK CONSULT BOT UI -->
-    <div id="quick-consult-modal" class="modal">
+    <div class="mobile-dock">
+        <a href="tel:6613228282">Call</a>
+        <a href="#team">Artists</a>
+        <a href="#booking">Book</a>
+    </div>
+
+    <div id="quick-consult-modal" class="modal" aria-hidden="true">
         <div class="modal-content frosted-glass">
-            <span class="close-modal">&times;</span>
+            <button type="button" class="close-modal" aria-label="Close quick consult">&times;</button>
             <div id="bot-chat-container">
                 <div class="bot-header">
                     <h3>Mad Dog Intake Bot</h3>
-                    <p>Tell us your idea in 1-2 minutes.</p>
+                    <p>Use this to prefill the booking form in under two minutes.</p>
                 </div>
                 <div id="bot-messages"></div>
-                <div id="bot-input-area">
-                    <!-- Dynamic buttons or text input -->
-                </div>
+                <div id="bot-input-area"></div>
             </div>
         </div>
     </div>

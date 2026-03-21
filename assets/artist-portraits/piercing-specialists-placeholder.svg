@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic placeholder portrait for Chris and Jocelyn</title>
+  <desc id="desc">Stylized dual portrait with cool metallic tones, jewelry motifs, and a clean studio atmosphere.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06090c"/>
+      <stop offset="50%" stop-color="#0f1720"/>
+      <stop offset="100%" stop-color="#161113"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="28%" r="42%">
+      <stop offset="0%" stop-color="#8be9ff" stop-opacity=".44"/>
+      <stop offset="64%" stop-color="#8be9ff" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#8be9ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="450" cy="310" r="270" fill="url(#halo)"/>
+  <g opacity=".16" stroke="#8be9ff" stroke-width="5" fill="none">
+    <path d="M116 188c97-43 202-59 315-48"/>
+    <path d="M600 152c63 20 124 60 184 120"/>
+    <path d="M168 852c107-42 207-57 299-43"/>
+  </g>
+  <g transform="translate(70 120)">
+    <path d="M118 732c44-114 132-171 264-171 132 0 220 57 264 171v128H118z" fill="#0f141b"/>
+    <path d="M174 748c42-108 120-163 233-163s191 55 232 163v112H174z" fill="#141117"/>
+    <path d="M220 384c0-138 63-220 148-220 86 0 148 82 148 220 0 128-63 211-148 211-85 0-148-83-148-211z" fill="#c99572"/>
+    <path d="M386 372c0-135 62-216 146-216 86 0 148 81 148 216 0 127-61 207-148 207-84 0-146-80-146-207z" fill="#bc8664"/>
+    <path d="M204 366c16-131 86-220 176-220 70 0 123 44 154 134l-52-21-41 38-39-35-68 25-56-24z" fill="#171416"/>
+    <path d="M372 344c20-123 88-206 176-206 64 0 116 42 148 128l-43-8-47 43-52-34-52 35-54-17z" fill="#211921"/>
+    <g opacity=".82" fill="none" stroke="#d8f7ff" stroke-width="4">
+      <circle cx="318" cy="404" r="9"/>
+      <circle cx="470" cy="394" r="9"/>
+      <path d="M246 828c30-27 68-41 113-42"/>
+      <path d="M480 824c26-25 61-40 103-44"/>
+      <path d="M352 718c24 16 49 24 77 24 28 0 53-8 77-24"/>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="72" y="974" fill="#ffffff" font-size="50" font-weight="700" letter-spacing="4">CHRIS &amp; JOCELYN</text>
+    <text x="74" y="1023" fill="#8be9ff" font-size="22" font-weight="700" letter-spacing="7">PIERCING / HYGIENE / JEWELRY FIT</text>
+  </g>
+</svg>

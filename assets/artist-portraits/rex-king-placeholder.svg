@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic placeholder portrait for Rex King</title>
+  <desc id="desc">Stylized portrait with old school flash energy, classic red-and-gold tones, and a traditional artist silhouette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0808"/>
+      <stop offset="52%" stop-color="#1e1111"/>
+      <stop offset="100%" stop-color="#291708"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="28%" r="38%">
+      <stop offset="0%" stop-color="#ffd166" stop-opacity=".48"/>
+      <stop offset="66%" stop-color="#ffd166" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171113"/>
+      <stop offset="100%" stop-color="#090608"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="450" cy="312" r="250" fill="url(#halo)"/>
+  <g opacity=".16" stroke="#ff5d3d" stroke-width="5" fill="none">
+    <path d="M160 156c86 37 177 65 272 82"/>
+    <path d="M664 188c-81 33-153 69-214 109"/>
+    <path d="M160 832c80-39 163-59 250-60"/>
+  </g>
+  <g transform="translate(120 120)">
+    <path d="M182 716c44-111 135-166 272-166 138 0 228 55 272 166v144H182z" fill="url(#coat)"/>
+    <path d="M316 528h190v160H316z" fill="#9f7455"/>
+    <path d="M266 356c0-146 74-232 176-232 99 0 174 86 174 232 0 138-74 224-174 224-102 0-176-86-176-224z" fill="#c79268"/>
+    <path d="M246 330c29-149 112-238 214-238 81 0 148 49 182 151l-49-9-39 42-57-33-53 42-90-17-86 62z" fill="#221214"/>
+    <path d="M346 408c17 13 39 20 64 20 24 0 48-7 68-20" stroke="#714c36" stroke-linecap="round" stroke-width="8" fill="none"/>
+    <path d="M342 506c29 21 59 31 90 31 31 0 62-10 94-31-17 68-48 114-92 114-46 0-77-40-92-114z" fill="#3f251d"/>
+    <g opacity=".76" fill="none" stroke="#ffe4b2" stroke-width="4">
+      <path d="M220 776l45-40 45 40-45 40z"/>
+      <path d="M548 744c15 0 30 8 44 24"/>
+      <path d="M290 838c22-20 52-31 89-33"/>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="72" y="974" fill="#ffffff" font-size="54" font-weight="700" letter-spacing="4">REX KING</text>
+    <text x="74" y="1023" fill="#ffd166" font-size="22" font-weight="700" letter-spacing="7">OLD SCHOOL / BOLD FLASH / TRADITIONAL</text>
+  </g>
+</svg>

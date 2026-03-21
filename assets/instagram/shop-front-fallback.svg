@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Mad Dog Tattoo shopfront fallback artwork</title>
+  <desc id="desc">Branded neon storefront illustration used as a fallback Instagram card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#1f120d"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff4d00"/>
+      <stop offset="100%" stop-color="#ffd166"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect x="138" y="250" width="804" height="580" rx="32" fill="#090909" stroke="#3a2417" stroke-width="8"/>
+  <rect x="198" y="320" width="684" height="164" rx="18" fill="none" stroke="url(#neon)" stroke-width="10"/>
+  <text x="540" y="418" fill="#fff3e8" font-size="92" font-weight="700" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="8">MAD DOG</text>
+  <text x="540" y="502" fill="#ffb37a" font-size="36" font-weight="700" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="10">DOWNTOWN BAKERSFIELD</text>
+  <path d="M260 610h560M260 676h560" stroke="#2d2d31" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="334" cy="742" r="50" fill="#ff4d00" opacity=".72"/>
+  <circle cx="540" cy="742" r="50" fill="#ffd166" opacity=".42"/>
+  <circle cx="746" cy="742" r="50" fill="#00f2ff" opacity=".42"/>
+  <text x="540" y="950" fill="#ffffff" font-size="42" font-weight="700" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="6">@MAD_DOG_TATTOO</text>
+</svg>

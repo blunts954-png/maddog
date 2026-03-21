@@ -7,44 +7,90 @@
     <meta name="description" content="Expert tattoo cover-ups in Kern County. We specialize in turning old, blown-out, or unwanted ink into professional masterpieces using bold blackwork or traditional styles.">
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="dark-theme">
+<body class="dark-theme" data-booking-url="../index.html#booking">
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <div class="logo-circle"></div>
+            <div class="brand-text">
+                <h2>MAD DOG TATTOO</h2>
+                <p>TATTOO & BODY PIERCING • BAKERSFIELD, CA</p>
+            </div>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="site-menu">
+            <a href="../index.html">HOME</a>
+            <a href="../index.html#work">WORK</a>
+            <a href="../index.html#team">OUR TEAM</a>
+            <a href="../index.html#booking">BOOKING</a>
+            <a href="../index.html#booking" class="btn-book">BOOK NOW</a>
+        </div>
+    </nav>
+
     <div class="background-overlay" style="background-image: url('../maddoglogo.jpg');"></div>
     
     <main>
         <section class="parallax-section">
             <div class="frosted-glass panel">
-                <a href="../index.html" class="btn-text">← Back to Shop</a>
                 <h1>Tattoo Cover-Ups in Bakersfield</h1>
                 <div class="aeo-content">
                     <h2>Bad Decisions Meet Real Solutions</h2>
                     <p>Looking for <strong>cover-up tattoos near 19th Street Bakersfield</strong>? We don't do "magic tricks" to hide old ink—we do expert design. Most cover-ups require bold saturation and clever placement to fully mask the original piece.</p>
                     
-                    <div class="info-block">
-                        <h3>Our Approach</h3>
-                        <p>We use high-contrast Blackwork or Old School styles. These are the most effective at burying old pigments without having the old tattoo ghost through after healing.</p>
+                    <div class="aeo-grid">
+                        <div class="aeo-card">
+                            <h3>Our Approach</h3>
+                            <p>We use high-contrast Blackwork or Old School styles. These are the most effective at burying old pigments without having the old tattoo ghost through after healing.</p>
+                        </div>
+
+                        <div class="aeo-card">
+                            <h3>What Affects Success?</h3>
+                            <ul>
+                                <li><strong>Age of Ink:</strong> Older, faded ink is easier to cover.</li>
+                                <li><strong>Scarring:</strong> We assess skin texture before committing.</li>
+                                <li><strong>Size:</strong> A cover-up is usually 2-3x larger than the original piece.</li>
+                            </ul>
+                        </div>
+
+                        <div class="aeo-card">
+                            <h3>Pricing for Cover-Ups</h3>
+                            <p>Cover-ups often take more planning and time than fresh skin. Final quotes are given after an in-person session on 19th St.</p>
+                        </div>
                     </div>
 
-                    <div class="info-block">
-                        <h3>What Affects Success?</h3>
-                        <ul>
-                            <li><strong>Age of Ink:</strong> Older, faded ink is easier to cover.</li>
-                            <li><strong>Scarring:</strong> We assess skin texture before committing.</li>
-                            <li><strong>Size:</strong> A cover-up is usually 2-3x larger than the original piece.</li>
-                        </ul>
-                    </div>
-
-                    <div class="info-block">
-                        <h3>Pricing for Cover-Ups</h3>
-                        <p>Cover-ups often take more planning and time than fresh skin. Final quotes are given after an in-person session on 19th St.</p>
-                    </div>
-
-                    <div class="cta-strip">
-                        <p>Ready to bury that old ink? <button class="btn btn-primary quick-consult-trigger">Start Your Consult</button></p>
+                    <div class="cta-strip" style="margin-top: 50px; text-align: center;">
+                        <p>Ready to bury that old ink? <button class="btn btn-primary quick-consult-trigger" data-artist="No Preference" data-service="cover-up">Start Your Consult</button></p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="frosted-glass">
+        <div class="footer-content">
+            <p>&copy; 2026 Mad Dog Tattoo | 1218 19th St, Bakersfield, CA 93301 | (661) 322-8282</p>
+            <p class="credits">Built by Chaotically Organized AI</p>
+        </div>
+    </footer>
+
+    <!-- QUICK CONSULT BOT UI -->
+    <div id="quick-consult-modal" class="modal">
+        <div class="modal-content frosted-glass">
+            <span class="close-modal">&times;</span>
+            <div id="bot-chat-container">
+                <div class="bot-header">
+                    <h3>Mad Dog Intake Bot</h3>
+                    <p>Tell us your idea in 1-2 minutes.</p>
+                </div>
+                <div id="bot-messages"></div>
+                <div id="bot-input-area"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="../script.js"></script>
 </body>
 </html>

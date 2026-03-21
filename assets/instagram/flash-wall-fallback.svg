@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Mad Dog flash wall fallback artwork</title>
+  <desc id="desc">Branded flash sheet illustration used as a fallback Instagram card.</desc>
+  <rect width="1080" height="1080" fill="#0b0c10"/>
+  <rect x="150" y="150" width="780" height="780" rx="28" fill="#f2e7d6"/>
+  <g stroke="#111" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M305 322c72-60 147-60 220 0-74 44-147 44-220 0z"/>
+    <path d="M720 270l38 82 88 13-64 61 14 87-76-42-76 42 15-87-64-61 88-13z"/>
+    <path d="M324 648c62-84 162-84 224 0-59 82-162 82-224 0z"/>
+    <path d="M688 642c54-54 129-54 182 0-53 88-129 88-182 0z"/>
+  </g>
+  <g fill="#ff4d00" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="540" y="876" font-size="50" letter-spacing="8">CLASSIC FLASH</text>
+    <text x="540" y="930" font-size="26" letter-spacing="7">WALK-INS ALL WEEK</text>
+  </g>
+</svg>

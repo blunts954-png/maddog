@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic placeholder portrait for Bret Trout</title>
+  <desc id="desc">Stylized versatile artist portrait with lettering-inspired line art and warm neon accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0a0e"/>
+      <stop offset="50%" stop-color="#17131d"/>
+      <stop offset="100%" stop-color="#26140f"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151519"/>
+      <stop offset="100%" stop-color="#07080b"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="28%" r="38%">
+      <stop offset="0%" stop-color="#ff9c4d" stop-opacity=".44"/>
+      <stop offset="68%" stop-color="#ff9c4d" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#ff9c4d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="450" cy="312" r="250" fill="url(#halo)"/>
+  <g opacity=".14" stroke="#ff9c4d" stroke-width="5" fill="none">
+    <path d="M144 180c79 51 166 84 258 98"/>
+    <path d="M654 144c-70 57-137 96-201 117"/>
+    <path d="M592 834c-66-45-141-72-227-82"/>
+  </g>
+  <g transform="translate(120 120)">
+    <path d="M188 716c46-108 136-162 270-162 135 0 224 54 270 162v144H188z" fill="url(#coat)"/>
+    <path d="M318 528h186v158H318z" fill="#9e7255"/>
+    <path d="M268 356c0-146 73-230 172-230 100 0 174 84 174 230 0 138-75 224-174 224-98 0-172-86-172-224z" fill="#c08e6a"/>
+    <path d="M248 332c28-155 112-238 216-238 81 0 150 48 186 154l-50-10-41 44-54-31-55 43-89-18-81 56z" fill="#1a1618"/>
+    <path d="M346 412c19 12 40 18 63 18s45-6 65-18" stroke="#6f4d37" stroke-linecap="round" stroke-width="8" fill="none"/>
+    <path d="M340 502c31 22 60 32 90 32 29 0 60-10 93-32-18 67-49 112-92 112-44 0-74-39-91-112z" fill="#321d1a"/>
+    <g opacity=".72" fill="none" stroke="#fff3de" stroke-width="4">
+      <path d="M214 780c39-24 84-36 135-36"/>
+      <path d="M518 756c34 6 65 23 93 50"/>
+      <path d="M286 842c26-20 55-31 89-34"/>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="72" y="974" fill="#ffffff" font-size="54" font-weight="700" letter-spacing="4">BRET TROUT</text>
+    <text x="74" y="1023" fill="#ff9c4d" font-size="22" font-weight="700" letter-spacing="7">LETTERING / TRADITIONAL / WALK-IN READY</text>
+  </g>
+</svg>

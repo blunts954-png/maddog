@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic placeholder portrait for Tyler Reed</title>
+  <desc id="desc">Stylized portrait with illustrative flourishes, cool tones, and a custom artist silhouette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a11"/>
+      <stop offset="45%" stop-color="#111a29"/>
+      <stop offset="100%" stop-color="#1d1022"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151922"/>
+      <stop offset="100%" stop-color="#080b12"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="48%" cy="28%" r="40%">
+      <stop offset="0%" stop-color="#00f2ff" stop-opacity=".45"/>
+      <stop offset="68%" stop-color="#00f2ff" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#00f2ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="450" cy="310" r="260" fill="url(#halo)"/>
+  <g opacity=".16" stroke="#00f2ff" stroke-width="5" fill="none">
+    <path d="M126 144c101 41 184 105 249 191"/>
+    <path d="M638 120c-78 58-139 119-186 182"/>
+    <path d="M630 778c-93 24-176 77-244 159"/>
+  </g>
+  <g transform="translate(120 118)">
+    <path d="M172 716c52-106 143-160 271-160 130 0 223 54 278 160v144H172z" fill="url(#coat)"/>
+    <path d="M316 528h188v156H316z" fill="#9e7158"/>
+    <path d="M266 352c0-146 72-226 172-226s170 80 170 226c0 137-73 222-170 222s-172-85-172-222z" fill="#c7916f"/>
+    <path d="M252 326c9-143 98-234 206-234 103 0 176 65 198 164l-63-8-31 57-72-44-52 47-118-13-68 31z" fill="#1e1920"/>
+    <path d="M260 276c44-58 90-95 140-111" stroke="#53f2ff" stroke-opacity=".55" stroke-width="7" fill="none"/>
+    <path d="M350 418c16 10 36 15 58 15 23 0 45-5 64-15" stroke="#6e4632" stroke-linecap="round" stroke-width="8" fill="none"/>
+    <path d="M356 508c26 19 53 29 81 29 30 0 60-10 90-29-17 61-46 110-93 110-49 0-76-41-78-110z" fill="#3a2321"/>
+    <g opacity=".75" fill="none" stroke="#dffcff" stroke-width="4">
+      <path d="M194 752c40-37 80-60 120-70"/>
+      <path d="M522 726c30 6 61 26 92 60"/>
+      <path d="M294 812l26-52 31 45 29-51 34 48"/>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="72" y="974" fill="#ffffff" font-size="54" font-weight="700" letter-spacing="4">TYLER REED</text>
+    <text x="74" y="1023" fill="#00f2ff" font-size="22" font-weight="700" letter-spacing="7">ILLUSTRATIVE / CUSTOM / MAIDENFANG</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Mad Dog piercing case fallback artwork</title>
+  <desc id="desc">Branded jewelry case illustration used as a fallback Instagram card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05080b"/>
+      <stop offset="100%" stop-color="#11181f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect x="182" y="188" width="716" height="704" rx="38" fill="#0e1116" stroke="#8be9ff" stroke-opacity=".4" stroke-width="8"/>
+  <g fill="none" stroke="#d8f7ff" stroke-width="16" stroke-linecap="round">
+    <circle cx="360" cy="392" r="76"/>
+    <path d="M338 574c16 37 45 56 88 56s72-19 88-56"/>
+    <path d="M636 340c38 0 68 30 68 68s-30 68-68 68-68-30-68-68"/>
+    <path d="M622 652h94"/>
+    <path d="M774 616v74"/>
+    <path d="M774 616c0-34-28-62-62-62h-28"/>
+  </g>
+  <text x="540" y="842" fill="#8be9ff" font-size="46" font-weight="700" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="8">PIERCING SETUP</text>
+  <text x="540" y="900" fill="#ffffff" font-size="28" font-weight="700" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="6">SAFETY FIRST. CLEAN. PRECISE.</text>
+</svg>
