@@ -30,7 +30,7 @@ const FALLBACK_POSTS = [
         timestamp: 'Fallback'
     },
     {
-        imageUrl: 'maddoglogo.jpg',
+        imageUrl: 'maddog_tattoo_logo_1773729084697.png',
         caption: 'Mad Dog Tattoo branded fallback card.',
         permalink: 'https://www.instagram.com/mad_dog_tattoo/',
         timestamp: 'Studio Select'
