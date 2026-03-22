@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initRevealAnimations();
     initQuickConsult();
-    initInstagramFeed();
     initBookingForm();
 });
 
