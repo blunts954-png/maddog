@@ -61,15 +61,16 @@ body {
 }
 
 .splash-logo {
-    width: 280px;
-    filter: drop-shadow(0 0 40px var(--accent-gold-glow));
+    width: 450px;
+    max-width: 90%;
+    filter: drop-shadow(0 0 50px rgba(0,0,0,0.8));
     animation: splashFade 3s infinite alternate ease-in-out;
     opacity: 0;
 }
 
 @keyframes splashFade {
-    0% { transform: scale(0.95); opacity: 0.3; filter: brightness(0.4) drop-shadow(0 0 10px var(--accent-red)); }
-    100% { transform: scale(1); opacity: 1; filter: brightness(1.1) drop-shadow(0 0 50px var(--accent-gold)); }
+    0% { transform: scale(0.98); opacity: 0.6; filter: brightness(0.6) drop-shadow(0 0 20px var(--accent-red)); }
+    100% { transform: scale(1); opacity: 1; filter: brightness(1.2) drop-shadow(0 0 60px var(--accent-gold)); }
 }
 
 #splash-screen.fade-out {
@@ -84,11 +85,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: url('maddog_bulldog_v2.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     background-attachment: fixed;
     z-index: -1;
-    filter: brightness(0.3) contrast(1.1) saturate(0.8);
+    filter: contrast(1.1) brightness(0.2) saturate(0.6) grayscale(0.2);
 }
 
 .background-overlay::after {
@@ -96,9 +98,9 @@ body {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: 
-        linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.9)),
-        url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); /* Gritty industrial texture */
-    opacity: 0.6;
+        radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.85) 100%),
+        linear-gradient(to bottom, rgba(8,8,8,0.7), rgba(0,0,0,0.95)); /* Heavy shroud for readability */
+    opacity: 0.9;
 }
 
 .parallax-section {
@@ -249,14 +251,14 @@ nav.main-nav {
 }
 
 .logo-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 0; /* Square for more 'Industrial/Old School' feel */
-    background: url('maddog_tattoo_logo_1773729084697.png') center;
-    background-size: contain;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px; /* Slight roundness for the shield feel */
+    background: url('maddog_bulldog_v2.jpg') center;
+    background-size: cover;
     background-repeat: no-repeat;
-    border: 1px solid var(--accent-gold);
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    border: 2px solid var(--accent-gold);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8), 0 0 10px var(--accent-gold-glow);
 }
 
 .brand-text h2 {
